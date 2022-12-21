@@ -1,0 +1,29 @@
+.slider__item {
+  text-align: center;
+&--photo {
+  margin-bottom: 32px;
+  border-radius: 50%;
+}
+&--review {
+padding: 35px 39px;
+
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: calc(31 / 12);
+
+background-color: $primary-page-color;
+color: $secondary-text-color;
+text-align: center;
+border-radius: 10px;
+margin-bottom: 32px;
+}
+&--name {
+margin-bottom: 12px;
+
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: calc(37 / 20);
+}
+}
