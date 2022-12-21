@@ -1,0 +1,17 @@
+.button {
+    min-width: 152px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(17px/14px);
+    @include flex_centering;
+    text-align: center;
+    color: $primary-text-color;
+
+    padding:12px  24px;
+    border-radius: 10px;
+    background-color: $accent-color;
+    border-color: transparent;
+    transition: background-color $anim-std, color $anim-std;
+
+}

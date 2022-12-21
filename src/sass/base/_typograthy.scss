@@ -1,0 +1,21 @@
+.title {
+  font-family: 'Seymour One', sans-serif;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: calc(48px / 38px);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $secondary-text-color;
+}
+.sub-title{
+    font-family: 'Seymour One',sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  
+    color: $secondary-text-color;
+}

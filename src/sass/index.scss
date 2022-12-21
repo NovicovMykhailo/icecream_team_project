@@ -1,2 +1,19 @@
 @import './common';
-@import './example';
+// @import './example';
+// Breakpoints
+@import './utilities/breakpoints';
+// Vars
+@import './utilities/vars';
+// Animation
+@import './utilities/animation';
+// mixins
+@import './utilities/mixins';
+
+// utils
+@import './utilities/utilities';
+@import './utilities/reset';
+// Buttons
+@import './elements/buttons';
+// Site
+@import './base/body';
+@import './base/container';
