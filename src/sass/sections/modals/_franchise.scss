@@ -6,6 +6,12 @@
   width: 280px;
   height: 674px;
 
+  @media screen and (min-width: $tablet) {
+    width: 568px;
+    height: 668px;
+    padding: 32px 60px;
+  }
+
   background: $secondary-page-color;
   border: $border_std $accent-color;
   border-radius: 10px;
@@ -36,6 +42,14 @@
   text-align: center;
 
   color: $primary-text-color;
+
+  @media screen and (min-width: $tablet) {
+    width: 322px;
+
+    font-size: 20px;
+    line-height: calc(28 / 20);
+    margin: 0 auto 24px auto;
+  }
 }
 
 .franchise__warning {
@@ -47,6 +61,13 @@
   letter-spacing: 0.01em;
 
   color: $primary-text-color;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 32px;
+
+    font-size: 16px;
+    letter-spacing: -0.01em;
+  }
 }
 
 .form__field {
@@ -73,6 +94,17 @@
   
   &:disabled {
     outline-color: $time-text-color;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 368px;
+    height: 42px;
+    padding: 11px 16px;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 16px;
+
+    font-size: 14px;
   }
 }
 
@@ -103,6 +135,17 @@
 
   &:disabled {
     outline-color: $time-text-color;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 368px;
+    height: 84px;
+    padding: 11px 16px;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 32px;
+
+    font-size: 14px;
   }
 }
 
