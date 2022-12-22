@@ -2,15 +2,15 @@
   width: 280px;
   height: 130px;
 
-  margin: 3em auto;
-  object-fit: cover;
+  margin: 0 auto;
+  object-fit: contain;
   overflow: hidden;
-  border: 3px solid rgba(255, 255, 255, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
-  
-//   position: relative;
-//   top: -98px;
-//   z-index: +10;
+
+  position: relative;
+  // top: -98px;
+  // z-index: +10;
 
   @media screen and (min-width: $tablet) {
     width: 704px;
@@ -24,20 +24,21 @@
   }
 }
 .slideshow ul {
-   width: 400%;
-   height: 130px;
+  position: relative;
+  top: -10%;
+  width: 400%;
+  height: 100%;
 
+    @media screen and (min-width: $tablet) {
+     width:400%;
+     height: 327px;
 
-  @media screen and (min-width: $tablet) {
-   width: 400%;
-   height: 327px;
+   }
+   @media screen and (min-width: $desktop) {
+     width: 400%;
+     height: 422px;
 
- }
- @media screen and (min-width: $desktop) {
-   width: 400%;
-   height: 422px;
-
- }
+   }
 }
 .slideshow li {
   float: left;
