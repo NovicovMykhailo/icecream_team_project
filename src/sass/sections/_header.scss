@@ -1,0 +1,50 @@
+header{
+  background-color: $primary-page-color;
+  padding-top: 12px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 20px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  
+}
+
+.nav {
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: block;
+    margin-left: 308px;
+  }
+
+
+}
+
+.nav__list {
+  @include flex_grid(4, 28px);
+}
+
+.nav__link {
+  color: $secondary-text-color;
+
+  transition: color $anim-std;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.nav__btn {
+  padding: 12px 36px;
+  margin-left: auto;
+}
