@@ -1,8 +1,8 @@
+
 .ingredients {
   width: 280px;
   height: 968px;
 
-  position: scroll;
   background-color: $secondary-page-color;
   border: $border_std $accent-color;
   border-radius: 10px;
@@ -11,7 +11,7 @@
   padding: 28px 20px;
 
   max-height: 92%;
-  overflow-y: auto;
+  // overflow-y: auto;
 
   @media screen and (min-width: $tablet) {
     width: 568px;
