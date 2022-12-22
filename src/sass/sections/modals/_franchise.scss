@@ -96,6 +96,10 @@
     outline-color: $time-text-color;
   }
 
+  &::placeholder {
+    color: $primary-text-color;
+  }
+
   @media screen and (min-width: $tablet) {
     width: 368px;
     height: 42px;
@@ -135,6 +139,10 @@
 
   &:disabled {
     outline-color: $time-text-color;
+  }
+
+  &::placeholder {
+    color: $primary-text-color;
   }
 
   @media screen and (min-width: $tablet) {
