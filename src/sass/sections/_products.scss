@@ -1,0 +1,124 @@
+// Розмічаю стандартні налаштування секції
+.products {
+    padding: 60px 0px;
+}
+// Головний тайтл
+.products__title {
+    font-family: 'Seymour One',sans-serif;
+    color: $sub-title-color;
+    font-weight: 400;
+    font-size: 30px;     
+    line-height: 1.27;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: center;
+
+    margin-bottom: 40px;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 34px;
+        line-height: 1.26;
+    }
+    @media screen and (min-width: $desktop) {
+        font-size: 36px;
+        line-height: 1.25;
+        letter-spacing: 0.06em;
+    }   
+}
+
+.products__examples {
+    display: grid;
+    // background-color: red;
+}
+// Розмічаю картки
+//Тайтл
+.products__examples-title {
+    font-family: 'Montserrat',sans-serif;
+    color: $sub-title-color;
+    font-weight: 700;
+    font-size: 20px;     
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: center;
+
+    margin-bottom: 40px;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 22px;
+        line-height: 1.23;
+    }
+    @media screen and (min-width: $desktop) {
+        font-size: 30px;
+        line-height: 1.23;
+    }   
+}
+//Дескріпшн
+.products__examples-discription {
+    font-family: 'Montserrat',sans-serif;
+    color: $sub-title-color;
+    font-weight: 400;
+    font-size: 14px;     
+    line-height: 176%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: center;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 16px;
+    }   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .products__card-item {
+//     display: grid;
+    
+// }
+
+// .ice-cream {
+//     background-color: $ice-cream-card-color;
+// }
+// .ice-coffee {
+//     background-color: $ice-coffee-card-color;
+// }
+// .milkshake {
+//     background-color: $milkshake-card-color;
+// }
+
+// // .team__card-item {
+// // 	text-align: center;
+// // 	background-color: $primary-page-color;
+// // 	border-radius: 24px;
+// //     & img{
+// //         margin: 0 auto;
+// //         width: calc(100vw - 30px);
+// //         max-width: 450px;
+
+// //         @media screen and (min-width: $tablet){
+// //              max-width: 354px;
+// //         }
+// //         @media screen and (min-width: $desktop){
+// //             width: 270px; 
+// //         }
+// //     }
+
+
+
+// // }
