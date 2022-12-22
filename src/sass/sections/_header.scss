@@ -1,4 +1,4 @@
-header{
+header {
   background-color: $primary-page-color;
   padding-top: 12px;
   @media screen and (min-width: $tablet) {
@@ -13,7 +13,6 @@ header{
 .header-container {
   display: flex;
   align-items: center;
-  
 }
 
 .nav {
@@ -25,8 +24,6 @@ header{
     display: block;
     margin-left: 308px;
   }
-
-
 }
 
 .nav__list {
@@ -47,4 +44,18 @@ header{
 .nav__btn {
   padding: 12px 36px;
   margin-left: auto;
+}
+
+// MOBILE MENU
+
+.mobile-menu__link {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.22;
+
+  color: $secondary-text-color;
+
+  &.streaming-link{
+    color: $primary-text-color;
+  }
 }
