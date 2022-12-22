@@ -369,12 +369,36 @@ header {
     letter-spacing: 0.06em;
   }
 }
-.products__examples {  
+
+.products__examples {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   list-style-type: none;
 }
 
+.products button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+.products__card-item {
+  width: 280px;
+  height: 528px;
+  outline: 1px solid black;
+  position: relative;
+}
+.products__card-item::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #AEC6A5;
+}
 
 .products__examples-title {
   font-family: "Montserrat", sans-serif;
@@ -441,7 +465,7 @@ header {
   width: 704px;
   height: 327px;
   border-radius: 18px;
-  top: -144px;
+  top: 0px;
   display: none;
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {

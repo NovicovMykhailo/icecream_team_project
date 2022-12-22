@@ -26,9 +26,36 @@
     }   
 }
 
-.products__examples {
+.products__examples {  
     display: grid;
-    // background-color: red;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style-type: none;
+}
+
+.products button {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	// outline: none;
+}
+.products__card-item {
+    width: 280px;
+    height: 528px;
+    outline: 1px solid black;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: $ice-cream-card-color;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 // Розмічаю картки
 //Тайтл
