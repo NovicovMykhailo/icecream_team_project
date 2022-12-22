@@ -1,0 +1,135 @@
+.ingredients {
+    width: 280px;
+    height: 968px;
+    background-color: $secondary-page-color;
+    border: $border_std $accent-color;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    padding: 28px 0;
+
+  @media screen and (min-width: $tablet){
+    width: 568px;
+    height: 996px;
+    padding: 32px 0;
+
+  }
+}
+
+.ingredients__title {
+  font-family: 'Seymour One';
+  color: $primary-text-color;
+  font-size: 20px;
+  line-height: calc(28px / 20px);
+  text-transform: none;
+  margin-bottom: 31px;
+}
+
+.Ingredients__illustration {
+  display: inline-block;
+  border-radius: 50%;
+  background: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+  margin-bottom: 24px;
+}
+.Ingredients__image {
+  position: relative;
+  top: -7px;
+}
+.calories {
+  margin: auto;
+  @include flex_grid(4, 20px);
+  width: 320px;
+  color: $primary-text-color;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(15px / 12px);
+  margin-bottom: 48px;
+}
+
+.calories__item {
+  @include flex_grid(2, 10px);
+  justify-content: center;
+  flex-direction: column;
+  border: $border_std #9cbe8f;
+  border-radius: 40px;
+  text-align: center;
+
+  padding-bottom: 15px;
+}
+
+.calories__weight {
+  @include flex_centering;
+  align-self: center;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(28px / 12px);
+
+  border-radius: 50%;
+  width: 53px;
+  height: 53px;
+  background: #9cbe8f;
+  border: 2px solid #9cbe8f;
+  box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+}
+
+.ingredients__dscr {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(28px / 20px);
+  padding-bottom: 24px;
+}
+.ingredients-list {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 488px;
+  margin-bottom: 48px;
+}
+.ingredients-list__product {
+  text-align: left;
+}
+.ingredients-list__weight {
+  text-align: right;
+}
+.ingredients-list__item:not(:last-child) {
+  margin-bottom: 11px;
+}
+.ingredients-form {
+  width: 368px;
+margin-top: 0;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ingredients-form__username,
+.ingredients-form__telephone,
+.ingredients-form__comments {
+  width: 368px;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  padding: 11px 16px;
+  &::placeholder {
+    color: $primary-text-color;
+  }
+}
+
+.ingredients-form__comments {
+  resize: none;
+  height: 84px;
+}
+
+.ingredients__button{
+    margin: 0 auto;
+}
