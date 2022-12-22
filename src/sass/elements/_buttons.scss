@@ -8,6 +8,8 @@
   text-align: center;
   color: $black-text-color;
 
+  cursor: pointer;
+
   padding: 12px 24px;
   border-radius: 10px;
   background-color: $accent-color;
@@ -36,25 +38,63 @@
   text-align: center;
   color: $black-text-color;
 
+  cursor: pointer;
+
   padding: 12px 24px;
   border-radius: 10px;
   background-color: transparent;
   border: $border_std $accent-color;
-  transition: background-color $anim-std, color $anim-std;
+  transition: background-color $anim-std, color $anim-std, fill $anim-std;
 
   &:hover {
     border-color: #0a8817;
+    fill: currentColor;
   }
   &:focus {
     border-color: #0a8817;
     color: $secondary-text-color;
+    fill: currentColor;
   }
   &:disabled {
     border-color: #ababab;
     color: $black-text-color;
+    fill: currentColor;
   }
   @media screen and (max-width: $tablet) {
     padding: 11px 26px;
     min-width: 108px;
+  }
+}
+.button-text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15px/12px);
+  text-decoration-line: underline;
+  text-align: center;
+
+  color: $accent-color;
+
+  @include flex-centering;
+  background-color: transparent;
+  border: none;
+  transition: color $anim-std, fill $anim-std;
+
+  &:hover {
+    color: #0a8817;
+    fill: currentColor;
+  }
+  &:focus {
+    color: $secondary-text-color;
+    fill: currentColor;
+  }
+  &:disabled {
+    color: #ababab;
+    fill: currentColor;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: calc(17px / 14px);
   }
 }

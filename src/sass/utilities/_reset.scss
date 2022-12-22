@@ -19,8 +19,7 @@ ul {
 	visibility: hidden;
 }
 .section {
-    padding:0 16px;
-    @media screena and (min-width: $tablet) {
+    @media screan and (min-width: $tablet) {
         padding: 0 32px;
         
     }

@@ -1,21 +1,65 @@
 /* ==================Body Styles==================== */
 
 html {
-	scroll-behavior: smooth;
-  }
-body {
-	background-color: $primary-page-color;
-	color: $primary-text-color;
-	font-family: "Montserrat", sans-serif;
-	font-weight: normal;
-	font-size: 16px;
-	letter-spacing: 0.03em;
-	line-height: 1.37;
-	margin: auto;
-	
+  scroll-behavior: smooth;
 }
-img{
-	display: block;
-	max-width: 100%;
-	height: auto;
+body {
+  background-color: $secondary-page-color;
+  color: $primary-text-color;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  line-height: calc(25px / 14px);
+  margin: 0 auto;
+
+  background-image: url('../images/body/bg-body-sm.jpg');
+  background-size: 885px 1242px;
+  object-fit: cover;
+  z-index: -10;
+
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/body/bg-body-sm@2x.jpg');
+	
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    line-height: 1.37;
+    background-image: url('../images/body/bg-body-md.jpg');
+	background-size: 963px 1017px;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/body/bg-body-md@2x.jpg');
+	
+    
+    }
+
+    @media screen and (min-width: $desktop) {
+      background-image: url('../images/body/bg-body-big.jpg');
+	  background-size: 1278px 1330px;
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../images/body/bg-body-big@2x.jpg');
+		
+      }
+    }
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
