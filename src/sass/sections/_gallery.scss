@@ -10,7 +10,7 @@
   height: 130px;
   border-radius: 8px;
   top: -32px;
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: 480px) {
     display: none;
   }
 }
@@ -41,8 +41,6 @@
 .slideshow-mobile ul,
 .slideshow-tablet ul,
 .slideshow-desktop ul {
-  // position: relative;
-  // top: -10%;
   width: 400%;
   height: 100%;
 }
