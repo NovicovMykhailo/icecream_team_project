@@ -1,19 +1,44 @@
-.slideshow {  
-   //  width: 1013px;  
-   width: 560px;
-    height: 422px;  
-    margin: 3em auto;
-    object-fit: contain;
-    overflow: hidden;
-    border: 3px solid rgba(255, 255, 255, 0.3);
-    border-radius: 24px;
-    position: relative;
-    top: -98px;
-    z-index: +10;
- } 
- .slideshow ul {  
-    width: 400%;  
+.slideshow {
+  width: 280px;
+  height: 130px;
+
+  margin: 3em auto;
+  object-fit: cover;
+  overflow: hidden;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  
+//   position: relative;
+//   top: -98px;
+//   z-index: +10;
+
+  @media screen and (min-width: $tablet) {
+    width: 704px;
+    height: 327px;
+    border-radius: 18px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 1013px;
     height: 422px;
- }  
- .slideshow li { float: left; }
- 
+    border-radius: 24px;
+  }
+}
+.slideshow ul {
+   width: 400%;
+   height: 130px;
+
+
+  @media screen and (min-width: $tablet) {
+   width: 400%;
+   height: 327px;
+
+ }
+ @media screen and (min-width: $desktop) {
+   width: 400%;
+   height: 422px;
+
+ }
+}
+.slideshow li {
+  float: left;
+}
