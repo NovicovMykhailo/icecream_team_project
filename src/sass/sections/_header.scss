@@ -1,8 +1,6 @@
 header{
   background-color: $primary-page-color;
-  @media screen and (min-width: $mobile) {
-    padding-top: 12px;
-  }
+  padding-top: 12px;
   @media screen and (min-width: $tablet) {
     padding-top: 20px;
   }
