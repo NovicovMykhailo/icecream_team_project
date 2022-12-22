@@ -1,6 +1,7 @@
 header {
   background-color: $primary-page-color;
   padding-top: 12px;
+  padding-bottom: 12px;
   @media screen and (min-width: $tablet) {
     padding-top: 20px;
   }
@@ -16,10 +17,10 @@ header {
 }
 
 .nav {
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $mobile) {
     display: none;
   }
-
+  
   @media screen and (min-width: $desktop) {
     display: block;
     margin-left: 308px;
