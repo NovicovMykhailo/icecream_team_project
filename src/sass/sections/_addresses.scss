@@ -1,0 +1,232 @@
+.contacts-list {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+
+  &__item {
+    // width: 280px;
+    margin-bottom: 16px;
+    background-color: #fcfcfc;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    position: relative;
+    @media screen and (min-width: $tablet) {
+      margin-left: 16px;
+
+      &:nth-child(1) {
+        margin-left: 0;
+      }
+    }
+    @media screen and (min-width: $desktop) {
+      margin-left: 32px;
+      &:nth-child(1) {
+        margin-left: 0;
+      }
+    }
+  }
+
+  &__category {
+    top: 40px;
+    left: 32px;
+    position: absolute;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    padding: 4px 22px;
+
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: #131313;
+    background-color: #f8d24e;
+    border-radius: 4px;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 16px;
+    }
+  }
+
+  &__wrapper {
+    padding-top: 82px;
+    padding-left: 32px;
+    padding-right: 36px;
+
+    @media screen and (min-width: $tablet) {
+      padding-top: 102px;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      padding-top: 102px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+
+  &__location {
+    padding-bottom: 8px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+
+    letter-spacing: 0.04em;
+
+    color: #131313;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 14px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      font-size: 16px;
+    }
+  }
+
+  &__link {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 183%;
+
+    letter-spacing: 0.04em;
+
+    color: #d6936d;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 14px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      font-size: 16px;
+    }
+  }
+}
+
+.contacts-time {
+  padding-top: 48px;
+  padding-left: 32px;
+  padding-right: 124px;
+  @media screen and (min-width: $tablet) {
+    padding-right: 56px;
+    padding-top: 64px;
+    padding-left: 24px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-right: 164px;
+    padding-top: 64px;
+    padding-left: 40px;
+  }
+
+  &__item {
+    padding-bottom: 8px;
+  }
+  &__item:nth-child(2) {
+    padding-bottom: 0;
+  }
+
+  &__day {
+    position: relative;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+
+    color: #131313;
+    // &::before {
+    //         position: absolute;
+    //         content: '';
+    //         width: 216px;
+    //         height: 0;
+    //         top: 176px;
+    //         border-top: 1px solid #e1e1e1;
+    //     }
+    
+    //     &::after {
+    //         position: absolute;
+    //         content: '';
+    //         width: 216px;
+    //         height: 0;
+    //         top: 320px;
+    //         border-top: 1px solid #E1E1E1;
+    //     }
+
+    @media screen and (min-width: $tablet) {
+      font-size: 14px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      font-size: 16px;
+    }
+    
+  }
+
+    
+  &__time {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+
+    color: #ababab;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 14px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      font-size: 16px;
+    }
+  }
+}
+
+.contacts {
+  padding-top: 48px;
+  padding-left: 32px;
+  padding-right: 118px;
+  padding-bottom: 24px;
+  @media screen and (min-width: $tablet) {
+    padding-right: 49px;
+    padding-top: 64px;
+    padding-left: 24px;
+    padding-bottom: 40px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-right: 164px;
+    padding-top: 64px;
+    padding-left: 40px;
+  }
+
+  &__item {
+    padding-bottom: 6px;
+  }
+
+  &__item:nth-child(2) {
+    padding-bottom: 0;
+  }
+
+  &__link {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 160%;
+
+    color: #131313;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 14px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      font-size: 16px;
+    }
+  }
+}
