@@ -47,6 +47,9 @@ header {
   @media screen and (min-width: $tablet) {
     display: block;
     padding: 12px 36px;
+    margin-left: 32px;
+  }
+  @media screen and (min-width: $desktop) {
     margin-left: auto;
   }
 }
@@ -78,10 +81,6 @@ header {
   }
 }
 
-.mobile-menu__btn{
-  color: #fff;
-}
-
 .mobile-menu__icon{
   fill: currentColor;
 }
@@ -98,11 +97,9 @@ header {
 }
 
 .menu-toggle {
-  min-height: 40px;
-  min-width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex_centering(flex);
+  min-height: 32px;
+  min-width: 32px;
 
   margin-left: auto;
 
@@ -113,9 +110,7 @@ header {
   border-radius: 50%;
   outline: none;
 
-  @media screen and (min-width: $tablet) {
-    margin-right: 32px;
-  }
+  color: #fff;
   @media screen and (min-width: $desktop) {
     display: none;
   }
