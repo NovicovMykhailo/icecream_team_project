@@ -1,45 +1,54 @@
-.slideshow {
-  width: 280px;
-  height: 130px;
-
+.gallery__slideshow {
   margin: 0 auto;
   object-fit: contain;
   overflow: hidden;
-  border: 2px solid rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-
   position: relative;
-  // top: -98px;
-  // z-index: +10;
-
+  z-index: +10;
+}
+.slideshow-mobile {
+  width: 280px;
+  height: 130px;
+  border-radius: 8px;
+  top: -32px;
   @media screen and (min-width: $tablet) {
-    width: 704px;
-    height: 327px;
-    border-radius: 18px;
-  }
-  @media screen and (min-width: $desktop) {
-    width: 1013px;
-    height: 422px;
-    border-radius: 24px;
+    display: none;
   }
 }
-.slideshow ul {
-  position: relative;
-  top: -10%;
+.slideshow-tablet {
+  width: 704px;
+  height: 327px;
+  border-radius: 18px;
+  top: -144px;
+
+  display: none;
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    display: block;
+  }
+}
+
+.slideshow-desktop {
+  width: 1013px;
+  height: 422px;
+  border-radius: 24px;
+  top: -98px;
+
+  display: none;
+  @media screen and(min-width: $desktop) {
+    display: block;
+  }
+}
+
+.slideshow-mobile ul,
+.slideshow-tablet ul,
+.slideshow-desktop ul {
+  // position: relative;
+  // top: -10%;
   width: 400%;
   height: 100%;
-
-    @media screen and (min-width: $tablet) {
-     width:400%;
-     height: 327px;
-
-   }
-   @media screen and (min-width: $desktop) {
-     width: 400%;
-     height: 422px;
-
-   }
 }
-.slideshow li {
+
+.slideshow-mobile li,
+.slideshow-tablet li,
+.slideshow-desktop li {
   float: left;
 }
