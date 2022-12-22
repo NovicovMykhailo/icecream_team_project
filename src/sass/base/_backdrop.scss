@@ -1,0 +1,17 @@
+.backdrop {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0, 0, 0, 0.7);
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	transition: opacity $anim-std;
+	z-index: 10000;
+
+    @media screen and (max-width: $mobile){	
+		padding: 0 15px;
+	}
+}
