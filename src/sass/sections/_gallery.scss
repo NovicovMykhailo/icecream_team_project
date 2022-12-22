@@ -1,17 +1,19 @@
 .slideshow {  
-    width: 1013px;  
+   //  width: 1013px;  
+   width: 560px;
     height: 422px;  
     margin: 3em auto;
-    object-fit: center;
+    object-fit: contain;
     overflow: hidden;
-    border: 3px solid tomato;
+    border: 3px solid rgba(255, 255, 255, 0.3);
     border-radius: 24px;
+    position: relative;
+    top: -98px;
+    z-index: +10;
  } 
  .slideshow ul {  
-    width: 100%;  
+    width: 400%;  
     height: 422px;
-    padding:0; margin:0;
-    list-style:none;
  }  
  .slideshow li { float: left; }
  
