@@ -1,6 +1,7 @@
  $(document).ready(function(){
    $('.slider').slick({
      dots: true,
-     adaptiveHeight: true,
+     easing: 'ease-in-out',
+     infinite: false,
       });
     });

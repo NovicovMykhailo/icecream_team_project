@@ -45,6 +45,9 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+  & .slick-arrow.slick-disabled {
+    opacity: 0;
+  }
   & .slick-dots {
     @include flex_centering;
   }
@@ -60,10 +63,19 @@
     background-color: $primary-dots-color;
     transition: background-color $anim-std;
   }
-  & .slick-dots button:hover,
-  & .slick-dots button:active {
+  & .slick-dots li.slick-active button {
     background-color: $primary-page-color;
   }
+  & .slick-dots button:hover {
+    background-color: $primary-page-color;
+  }
+}
+.slick-track {
+  display: flex;
+  @include flex_centering;
+}
+.slick-list {
+  overflow: hidden;
 }
 .slider__item {
   @include flex_centering;
@@ -122,11 +134,4 @@
       line-height: calc(30 / 16);
     }
   }
-}
-.slick-track {
-  display: flex;
-  @include flex_centering;
-}
-.slick-list {
-  overflow: hidden;
 }
