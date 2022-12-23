@@ -1,11 +1,15 @@
-
 /* ==================Container==================== */
 .container {
 	
 	padding: 0 20px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 480px;
+	width: 100vw;
+	@media screen and (min-width: $mobile) {
+		width: $mobile;
+			
+	}
+
 
 
 	@media screen and (min-width: $tablet) {
