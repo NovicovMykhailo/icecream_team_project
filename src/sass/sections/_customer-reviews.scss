@@ -1,0 +1,132 @@
+.reviews {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.slider {
+  position: relative;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  @media screen and (min-width: $mobile) {
+    width: 280px;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 704px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 968px;
+  }
+  & .slick-arrow {
+    position: absolute;
+    transform: translateY(-60px);
+    top: 50%;
+    z-index: 11;
+    font-size: 0;
+    width: 35px;
+    height: 140px;
+    padding: 40px 10px;
+  }
+  & .slick-arrow.slick-prev {
+    left: 0;
+    
+    border: none;
+    background-color: transparent;
+    background-image: url('../images/customers-reviews/arrows/left.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  & .slick-arrow.slick-next {
+    right: 0;
+   
+    border: none;
+    background-color: transparent;
+    background-image: url('../images/customers-reviews/arrows/right.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  & .slick-dots {
+    @include flex_centering;
+  }
+  & .slick-dots li {
+    margin-right: 18px;
+  }
+  & .slick-dots button {
+    height: 12px;
+    width: 12px;
+    font-size: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: $primary-dots-color;
+    transition: background-color $anim-std;
+  }
+  & .slick-dots button:hover,
+  & .slick-dots button:active {
+    background-color: $primary-page-color;
+  }
+}
+.slider__item {
+  @include flex_centering;
+  flex-direction: column;
+  &--photo {
+    width: 85px;
+    margin-bottom: 32px;
+    border-radius: 44px;
+  }
+  &--review {
+    padding: 35px 39px;
+    margin-bottom: 32px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(31 / 12);
+
+    background-color: $primary-page-color;
+    color: $secondary-text-color;
+    text-align: center;
+    border-radius: 10px;
+    @media screen and (min-width: $tablet) {
+      padding-top: 28px;
+      padding-right: 80px;
+      padding-left: 80px;
+      padding-bottom: 29px;
+      border-radius: 24px;
+
+      font-weight: 500;
+      font-size: 14px;
+      line-height: calc(26 / 14);
+      letter-spacing: 0.04em;
+    }
+    @media screen and (min-width: $desktop) {
+      padding-top: 42px;
+      padding-right: 74px;
+      padding-left: 73px;
+      padding-bottom: 42px;
+
+      font-size: 16px;
+      line-height: calc(30 / 16);
+    }
+  }
+  &--name {
+    margin-bottom: 12px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(37 / 20);
+
+    color: $primary-text-color;
+    @media screen and (min-width: $tablet) {
+      font-size: 16px;
+      line-height: calc(30 / 16);
+    }
+  }
+}
+.slick-track {
+  display: flex;
+  @include flex_centering;
+}
+.slick-list {
+  overflow: hidden;
+}
