@@ -8,11 +8,16 @@
 }
 
 .contacts-list {
+  margin-right: auto;
+    margin-left: auto;
   @media screen and (min-width: $tablet) {
     display: flex;
-    @media screen and (min-width: $tablet) {
-      gap: 16px;
+    justify-content: center;
+    gap: 16px;
       margin-bottom: 0;
+    @media screen and (min-width: $tablet) {
+      // gap: 16px;
+      // margin-bottom: 0;
     }
 
     @media screen and (min-width: $desktop) {
@@ -22,6 +27,7 @@
   }
 
   &__item {
+    
     text-align: left;
     width: 280px;
     padding: 40px 32px;
@@ -60,7 +66,7 @@
     text-align: center;
     letter-spacing: 0.04em;
 
-    color: #131313;
+    color: $primary-text-color;
     background-color:$accent-color;
     border-radius: 4px;
 
@@ -90,7 +96,7 @@
 
     letter-spacing: 0.04em;
 
-    color: #131313;
+    color: $primary-text-color;
 
     @media screen and (min-width: $tablet) {
       font-size: 14px;
@@ -157,7 +163,7 @@
     font-size: 12px;
     line-height: 186%;
 
-    color: #131313;
+    color: $primary-text-color;
     
 
     @media screen and (min-width: $tablet) {
@@ -221,7 +227,7 @@
     font-size: 12px;
     line-height: 160%;
 
-    color: #131313;
+    color: $primary-text-color;
 
     @media screen and (min-width: $tablet) {
       font-size: 14px;
@@ -251,3 +257,4 @@
     margin-top: 60px;
   }
 }
+
