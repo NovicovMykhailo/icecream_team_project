@@ -14,7 +14,7 @@
 .advantages__list {
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 28px;
 
   @media screen and (min-width: $tablet) {
     flex-direction: row;
@@ -104,7 +104,7 @@
   border-radius: 50%;
 }
 .advantages__title {
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 
   font-weight: 700;
   font-size: 36px;
@@ -115,6 +115,8 @@
   color:/* black*/ $secondary-page-color;
 
   @media screen and (min-width: $tablet) {
+    margin-bottom: 12px;
+
     font-size: 48px;
     line-height: calc(48 / 59);
   }
