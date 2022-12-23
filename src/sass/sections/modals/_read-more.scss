@@ -6,19 +6,22 @@
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  padding: 28px;
-  width: 100%;
+  max-width: 248px;
   min-height: 459px;
+
+  box-sizing: border-box;
+  position: relative;
+  padding: 28px;
+
   z-index: 1000;
   background-color: $secondary-page-color;
+  border-radius: 10px;
+  border: $border_std $accent-color;
 
-  transform: translate(-50%, -50%) scale(1);
-
+  transform: scale(1);
+  max-width: 568px;
   transition: transform $anim-std;
-  @media screen and (min-width: 280px) {
+  @media screen and (min-width: $mobile) {
     max-width: 280px;
   }
   @media screen and (min-width: 780px) {
@@ -29,33 +32,29 @@
 }
 
 .modal__video {
-  @media screen and (max-width: 779px) {
-    display: block;
-    margin: 0 auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+
+  @media screen and (min-width: $mobile) {
     width: 224px;
-    height: 199px;
+  }
+  @media screen and (max-width: $tablet) {
+    width: 100%;
+  }
+  @media screen and (max-width: $desktop) {
+    width: 100%;
   }
 }
 .button__cross {
   position: absolute;
   top: 12px;
   right: 12px;
-
-  display: flex;
-  align-items: center;
-  width: 30px;
-  height: 30px;
-  margin-left: auto;
-  justify-content: end;
-
-  background-color: $secondary-page-color;
-  border: none;
-  cursor: pointer;
 }
 
 .modal__title--read {
-  font-size: 20px;
-  line-height: 1.4;
+  font-size: 16px;
+  line-height: calc(22px / 16px);
   color: $primary-text-color;
   margin-bottom: 32px;
 }
