@@ -1,0 +1,86 @@
+<div class="backdrop is-hidden" ingredients-modal>
+  <div class="ingredients">
+    <!-- Clz Btn -->
+    <button
+      class="modal__close-btn ingredients__clz-btn"
+      type="button"
+      ingredients-modal-close
+    >
+      <svg width="20" height="20">
+        <use href="./images/ice-cream-vectors.svg#cross_icon"></use>
+      </svg>
+    </button>
+    <h3 class="ingredients__title">Chololate icecream</h3>
+    <div class="Ingredients__illustration">
+      <img
+        class="Ingredients__image"
+        src="./images/modal-ingredients/Ellipse67.png"
+        srcset="./images/modal-ingredients/Ellipse67@2x.png x2"
+        alt=" ice-cream illustration"
+      />
+    </div>
+    <ul class="calories">
+      <li class="calories__item">
+        <span class="calories__weight">320</span>kcal
+      </li>
+      <li class="calories__item">
+        <span class="calories__weight">4g</span>Protein...
+      </li>
+      <li class="calories__item">
+        <span class="calories__weight">8,2g </span>Fats
+      </li>
+      <li class="calories__item">
+        <span class="calories__weight">40,4g </span>Carbs
+      </li>
+    </ul>
+    <h4 class="ingredients__dscr">Ingredients</h4>
+    <div class="ingredients-list">
+      <ul class="ingredients-list__product">
+        <li class="ingredients-list__item">Milk</li>
+        <li class="ingredients-list__item">Belgian chocolate</li>
+        <li class="ingredients-list__item">Cream</li>
+        <li class="ingredients-list__item">Cocoa powder</li>
+        <li class="ingredients-list__item">Sugar</li>
+        <li class="ingredients-list__item">Vanilla sugar</li>
+      </ul>
+      <ul class="ingredients-list__weight">
+        <li class="ingredients-list__item">100ml</li>
+        <li class="ingredients-list__item">20g</li>
+        <li class="ingredients-list__item">150 ml</li>
+        <li class="ingredients-list__item">30g</li>
+        <li class="ingredients-list__item">40g</li>
+        <li class="ingredients-list__item">10g</li>
+      </ul>
+    </div>
+    <form autocomplete="off">
+      <div class="ingredients-form">
+        <input
+          class="ingredients-form__username"
+          type="text"
+          name="Name"
+          id="Name"
+          placeholder="Name"
+          required minlength="3"
+        />
+        <input
+          class="ingredients-form__telephone"
+          type="tel"
+          name="Phone_Number"
+          id="tel"
+          placeholder="Phone"
+       required
+        />
+        <textarea
+          class="ingredients-form__comments"
+          name="Comment"
+          id="Cjmment"
+          cols="5"
+          rows="10"
+          placeholder="Comment"
+          required minlength="8"
+        ></textarea>
+      </div>
+      <button type="submit" class="button ingredients__button">Submit</button>
+    </form>
+  </div>
+</div>

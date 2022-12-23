@@ -1,36 +1,31 @@
-
-
 .address {
-  background-image: linear-gradient(to bottom,
-      transparent 353px,
-      $primary-page-color 353px,
-      $primary-page-color );
+  padding-bottom: 20px;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 373px,
+    $primary-page-color 373px,
+    $primary-page-color
+  );
 }
-
-
 .contacts-list {
-margin: 0 auto;
-
+  margin: 0 auto;
+  margin-bottom: 16px;
   @media screen and (min-width: $mobile) {
     width: 280px;
-    margin-bottom: 16px;
   }
   @media screen and (min-width: $tablet) {
     display: flex;
     justify-content: center;
     gap: 16px;
     margin-bottom: 0;
-
     @media screen and (min-width: $desktop) {
       gap: 32px;
       margin-bottom: 0;
     }
   }
-
   &__item {
-    
     text-align: left;
-    width: 280px;
+    width: 100%;
     padding: 40px 32px;
     margin-bottom: 16px;
     background-color: $secondary-text-color;
@@ -40,7 +35,6 @@ margin: 0 auto;
       width: 224px;
       margin-bottom: 0;
       padding: 40px 24px;
-
     }
     @media screen and (min-width: $desktop) {
       width: 368px;
@@ -48,21 +42,22 @@ margin: 0 auto;
       padding: 40px 40px;
     }
   }
-
   &__category {
     display: inline-block;
     margin-bottom: 20px;
+    padding: 4px 22px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
-    padding: 4px 22px;
+    line-height: calc(14 / 12);
 
     text-align: center;
     letter-spacing: 0.04em;
+    text-transform: uppercase;
 
     color: $primary-text-color;
-    background-color:$accent-color;
+    background-color: $accent-color;
     border-radius: 4px;
 
     @media screen and (min-width: $tablet) {
@@ -71,23 +66,13 @@ margin: 0 auto;
       padding: 4px 14px;
     }
   }
-
-  &__wrapper {
-    margin-bottom: 48px;
-
-    @media screen and (min-width: $tablet) {
-      margin-bottom: 64px;
-    }
-  }
-
-
   &__location {
-    padding-bottom: 8px;
+    margin-bottom: 8px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
-    line-height: 186%;
+    line-height: calc(22 / 12);
 
     letter-spacing: 0.04em;
 
@@ -96,81 +81,76 @@ margin: 0 auto;
     @media screen and (min-width: $tablet) {
       font-size: 14px;
     }
-
     @media screen and (min-width: $desktop) {
       font-size: 16px;
     }
   }
-
+  &__wrapper::after {
+    display: block;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    content: '';
+    width: 216px;
+    height: 1px;
+    background-color: $page-lines;
+  }
   &__link {
-    padding-bottom: 32px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
-    line-height: 183%;
+    line-height: calc(22 / 12);
 
     letter-spacing: 0.04em;
 
     color: $address-text-color;
-    &::after {
-        display: inline-block;
-        content: "";
-        width: 216px;
-        height: 1px;
-        background-color: rgba(225, 225, 225, 1);
-      }
 
     @media screen and (min-width: $tablet) {
       font-size: 14px;
     }
-
     @media screen and (min-width: $desktop) {
       font-size: 16px;
     }
   }
 }
-
 .contacts-time {
-  margin-bottom: 48px;
-
+  &::after {
+    display: block;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    content: '';
+    width: 216px;
+    height: 1px;
+    background-color: $page-lines;
+  }
   @media screen and (min-width: $tablet) {
     margin-bottom: 64px;
   }
-
-  &__item {
-    padding-bottom: 8px;
+  &__item:first-child {
+    margin-bottom: 8px;
   }
-  &__item:nth-child(2) {
-    padding-bottom: 0;
-  }
-
   &__day {
     position: relative;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
-    line-height: 186%;
+    line-height: calc(22 / 12);
 
     color: $primary-text-color;
-    
-
     @media screen and (min-width: $tablet) {
       font-size: 14px;
     }
-
     @media screen and (min-width: $desktop) {
       font-size: 16px;
     }
   }
-
   &__time {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
-    line-height: 186%;
+    line-height: calc(22 / 12);
 
     color: $time-text-color;
 
@@ -183,56 +163,46 @@ margin: 0 auto;
     }
   }
 }
-
 .contacts {
-
-
-  &__item {
-    padding-bottom: 6px;
+  &__item:first-child {
+    margin-bottom: 6px;
   }
-
-  &__item:nth-child(2) {
-    padding-bottom: 0;
-  }
-
   &__link {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
-    line-height: 160%;
+    line-height: calc(19 / 12);
 
     color: $primary-text-color;
 
     @media screen and (min-width: $tablet) {
       font-size: 14px;
     }
-
     @media screen and (min-width: $desktop) {
       font-size: 16px;
     }
   }
 }
 
-
-.button-wrapper{
+.button-wrapper {
+  @include flex-centering;
+  flex-direction: column;
   margin-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
- justify-content: center;
- gap: 16px;
-
-@media screen and (min-width: $tablet) {
+  gap: 16px;
+  @media screen and (min-width: $tablet) {
     flex-wrap: nowrap;
     margin-top: 40px;
   }
-
   @media screen and (min-width: $desktop) {
-  flex-wrap: nowrap;
+    flex-wrap: nowrap;
     margin-top: 60px;
   }
 }
-
-.button-arrow{
+.address__button {
+  min-width: 196px;
+}
+.button-arrow {
+  margin-left: 4px;
   fill: #000000;
 }
