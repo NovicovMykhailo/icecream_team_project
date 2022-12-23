@@ -1,8 +1,186 @@
-.hero{
+.hero {
+  position: relative;
+
+  padding-bottom: 236px;
+  padding-top: 50px;
+
   background-color: $primary-page-color;
+  background-image: url(../images/hero/dots_mob@1x.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+  @media screen and (min-width:768px) {
+    background-image: url(../images/hero/dots_tab@1x.png);
+    padding-bottom: 24px;
+    padding-top: 14px;
+  }
+  @media screen and (min-width:1200px) {
+    background-image: url(../images/hero/dots_desct@1x.png);
+    padding-bottom: 105px;
+    padding-top: 45px;
+  }
 }
 
-.hero__title{
-  color: $secondary-text-color;
+.hero__tablet--group{
+  @media screen and (min-width:768px) {
+    display: flex;
+  }
 }
+
+.hero__container {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.hero_ic--left {
+  position: absolute;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    bottom: 12px;
+    left: 32px;
+  }
+  @media screen and (min-width:1200px) {
+    bottom: 64px;
+    left: 16px;
+  }
+}
+
+.hero_ic--right{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  @media screen and (min-width: 768px) {
+  left: 408px;
+  transform: translateX(0);
+  }
+  @media screen and (min-width: 1200px) {
+    left: 652px;
+  }
+}
+
+.hero__title {
+  color: $secondary-text-color;
+  font-family: Seymour One;
+  font-size: 26px;
+  line-height: calc(33 / 26);
+  width: 247px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+  @media screen and (min-width:768px) {
+    margin-bottom: 24px;
+  }
+  @media screen and (min-width: 1200px) {
+      font-size: 38px;
+      line-height: calc(48 / 38);
+      width: 367px;
+  }
+}
+
+.hero__title--passion {
+  font-size: 34px;
+  line-height: calc(33 / 34);
+  @media screen and (min-width: 1200px) {
+    font-size: 38px;
+    line-height: calc(48 / 38);
+  }
+}
+
+.hero__group{
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.hero__btn--group {
+  display: flex;
+  gap: 12px;
+}
+
+.hero__chain {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    margin-top: 28px;
+  }
+}
+.chain__number{
+  font-family: Montserrat;
+  font-size: 28px;
+  font-weight: 900;
+  line-height: calc(34 / 28);
+  letter-spacing: 0.04em;
+  text-align: right;
+  @media screen and (min-width: 1200px) {
+    font-size: 46px;
+    line-height: calc(56 / 46);
+  }
+}
+.chain__item{
+  text-align: end;
+  &:not(:last-child){
+    margin-bottom: 20px;
+  }
+}
+.chain__text{
+  font-family: Montserrat;
+  font-size: 8px;
+  font-weight: 400;
+  line-height: calc(10 / 8);
+  letter-spacing: 0em;
+  color: $secondary-text-color;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(17 / 14);
+  }
+}
+.hero__text{
+  font-family: Montserrat; 
+  font-style: normal; 
+  font-size: 12px; 
+  line-height: calc(17 / 12);
+  color: $secondary-text-color;
+  margin-bottom: 12px;
+  @media screen and (min-width: 768px) {
+    width: 139px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(20 / 14);
+    width: 200px;
+  }
+}
+
+.hero__arrow{
+  fill: $secondary-text-color;
+  transition: $anim-std;
+  &:hover, &:focus {
+      fill: #0a8817;
+    }
+}
+.arrow__btn{
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding-left: 0;
+}
+.hero__text--group {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 53px;
+    margin-left: 216px;
+    margin-top: 39px;
+  }
+  @media screen and (min-width:1200px) {
+    margin-left: 257px;
+    margin-top: 109px;
+  }
+}
+
 
