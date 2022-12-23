@@ -27,7 +27,7 @@
     margin: 0 auto;
     margin-bottom: 16px;
     @media screen and (min-width: $mobile) {
-      // width: 280px;
+      max-width: 280px;
     }
     @media screen and (min-width: $tablet) {
       display: flex;
@@ -40,6 +40,8 @@
       }
     }
     &__item {
+      box-sizing: border-box;
+        margin: 0 auto;
       text-align: left;
       width: 280px;
       // width: 100%;
