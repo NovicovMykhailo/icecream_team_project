@@ -1,7 +1,4 @@
-// .address {
-//   background-color: $primary-page-color;
-//   // position: relative;
-// }
+
 
 .address {
   background-image: linear-gradient(to bottom,
@@ -10,23 +7,19 @@
       $primary-page-color );
 }
 
-// .container {
-//   // position: absolute;
-//   // top: 353px;
-// }
 
 .contacts-list {
-  margin-right: auto;
-  margin-left: auto;
+margin: 0 auto;
+
+  @media screen and (min-width: $mobile) {
+    width: 280px;
+    margin-bottom: 16px;
+  }
   @media screen and (min-width: $tablet) {
     display: flex;
     justify-content: center;
     gap: 16px;
     margin-bottom: 0;
-    @media screen and (min-width: $tablet) {
-      // gap: 16px;
-      // margin-bottom: 0;
-    }
 
     @media screen and (min-width: $desktop) {
       gap: 32px;
@@ -48,17 +41,11 @@
       margin-bottom: 0;
       padding: 40px 24px;
 
-      // &:nth-child(1) {
-      //   margin-left: 0;
-      // }
     }
     @media screen and (min-width: $desktop) {
       width: 368px;
       margin-bottom: 0;
       padding: 40px 40px;
-      // &:nth-child(1) {
-      //   margin-left: 0;
-      // }
     }
   }
 
@@ -116,6 +103,7 @@
   }
 
   &__link {
+    padding-bottom: 32px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -125,6 +113,13 @@
     letter-spacing: 0.04em;
 
     color: $address-text-color;
+    &::after {
+        display: inline-block;
+        content: "";
+        width: 216px;
+        height: 1px;
+        background-color: rgba(225, 225, 225, 1);
+      }
 
     @media screen and (min-width: $tablet) {
       font-size: 14px;
@@ -142,19 +137,6 @@
   @media screen and (min-width: $tablet) {
     margin-bottom: 64px;
   }
-  // padding-top: 48px;
-  // padding-left: 32px;
-  // padding-right: 124px;
-  // @media screen and (min-width: $tablet) {
-  //   padding-right: 56px;
-  //   padding-top: 64px;
-  //   padding-left: 24px;
-  // }
-  // @media screen and (min-width: $desktop) {
-  //   padding-right: 164px;
-  //   padding-top: 64px;
-  //   padding-left: 40px;
-  // }
 
   &__item {
     padding-bottom: 8px;
@@ -203,22 +185,7 @@
 }
 
 .contacts {
-  // padding-top: 48px;
-  // padding-left: 32px;
-  // padding-right: 118px;
-  // padding-bottom: 24px;
-  // @media screen and (min-width: $tablet) {
-  //   padding-right: 49px;
-  //   padding-top: 64px;
-  //   padding-left: 24px;
-  //   padding-bottom: 40px;
-  // }
 
-  // @media screen and (min-width: $desktop) {
-  //   padding-right: 164px;
-  //   padding-top: 64px;
-  //   padding-left: 40px;
-  // }
 
   &__item {
     padding-bottom: 6px;
