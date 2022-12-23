@@ -1,17 +1,31 @@
 .advantages {
   background-color: $primary-page-color;
-}
-.advantages__container {
-  width: auto;
-  padding: 0 45px;
+  padding-top: 25px;
+  padding-bottom: 64px;
 
   @media screen and (min-width: $tablet) {
-    padding: 0 76px;
+    padding-top: 30px;
+    padding-bottom: 205px;
   }
 
   @media screen and (min-width: $desktop) {
-    padding: 0 16px;
-    max-width: 1200px;
+    padding-bottom: 178px;
+  }
+}
+.advantages__container {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+
+  @media screen and (min-width: $mobile) {
+    width: 230px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 616px;
+   }
+  @media screen and (min-width: $desktop) {
+    width: 1168px;
   }
 }
 
