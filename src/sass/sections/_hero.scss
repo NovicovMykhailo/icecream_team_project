@@ -1,6 +1,4 @@
 .hero {
-  position: relative;
-
   padding-bottom: 236px;
   padding-top: 50px;
 
@@ -20,7 +18,9 @@
     padding-top: 45px;
   }
 }
-
+.hero__coontainer{
+  position: relative;
+}
 .hero__tablet--group{
   @media screen and (min-width:768px) {
     display: flex;
@@ -38,26 +38,28 @@
     display: none;
   }
   @media screen and (min-width: 768px) {
-    bottom: 12px;
+    bottom: 0;
     left: 32px;
   }
   @media screen and (min-width:1200px) {
-    bottom: 64px;
+    bottom: -35px;
     left: 16px;
   }
 }
 
 .hero_ic--right{
   position: absolute;
-  bottom: 0;
+  bottom: -236px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-45%);
   @media screen and (min-width: 768px) {
   left: 408px;
   transform: translateX(0);
+  bottom: -24px;
   }
   @media screen and (min-width: 1200px) {
     left: 652px;
+    bottom: -105px;
   }
 }
 
@@ -91,6 +93,21 @@
 .hero__group{
   @media screen and (min-width: 768px) {
     display: flex;
+  }
+}
+.hollow-button__hero{
+  @media screen and (max-width:1199px) {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: calc(15 / 12);
+    text-align: center;
+    padding: 11px 26px;
+    min-width: 112px;
+  }
+  
+  @media screen and (min-width:1200px) {
+    padding: 12px 34px;
   }
 }
 
