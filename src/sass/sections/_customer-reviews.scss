@@ -3,9 +3,11 @@
   padding-bottom: 40px;
 }
 .slider {
-  // display: flex;
+  position: relative;
+
   margin-right: auto;
   margin-left: auto;
+
   @media screen and (min-width: $mobile) {
     width: 280px;
   }
@@ -15,11 +17,57 @@
   @media screen and (min-width: $desktop) {
     width: 968px;
   }
+  & .slick-arrow {
+    position: absolute;
+    transform: translateY(-60px);
+    top: 50%;
+    z-index: 11;
+    font-size: 0;
+    width: 35px;
+    height: 140px;
+    padding: 40px 10px;
+  }
+  & .slick-arrow.slick-prev {
+    left: 0;
+    
+    border: none;
+    background-color: transparent;
+    background-image: url('../images/customers-reviews/arrows/left.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  & .slick-arrow.slick-next {
+    right: 0;
+   
+    border: none;
+    background-color: transparent;
+    background-image: url('../images/customers-reviews/arrows/right.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  & .slick-dots {
+    @include flex_centering;
+  }
+  & .slick-dots li {
+    margin-right: 18px;
+  }
+  & .slick-dots button {
+    height: 12px;
+    width: 12px;
+    font-size: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: $primary-dots-color;
+    transition: background-color $anim-std;
+  }
+  & .slick-dots button:hover,
+  & .slick-dots button:active {
+    background-color: $primary-page-color;
+  }
 }
 .slider__item {
   @include flex_centering;
   flex-direction: column;
-  width: 100%;
   &--photo {
     width: 85px;
     margin-bottom: 32px;
@@ -74,4 +122,11 @@
       line-height: calc(30 / 16);
     }
   }
+}
+.slick-track {
+  display: flex;
+  @include flex_centering;
+}
+.slick-list {
+  overflow: hidden;
 }
