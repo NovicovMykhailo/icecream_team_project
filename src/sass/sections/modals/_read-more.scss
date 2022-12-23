@@ -1,0 +1,72 @@
+// Modal Read-Mare
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 28px;
+  width: 100%;
+  min-height: 459px;
+  z-index: 1000;
+  background-color: $secondary-page-color;
+
+  transform: translate(-50%, -50%) scale(1);
+
+  transition: transform $anim-std;
+  @media screen and (min-width: 280px) {
+    max-width: 280px;
+  }
+  @media screen and (min-width: 780px) {
+    max-width: 568px;
+    min-height: 449px;
+    padding: 32px 60px;
+  }
+}
+
+.modal__video {
+  @media screen and (max-width: 779px) {
+    display: block;
+    margin: 0 auto;
+    width: 224px;
+    height: 199px;
+  }
+}
+.button__cross {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  display: flex;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  margin-left: auto;
+  justify-content: end;
+
+  background-color: $secondary-page-color;
+  border: none;
+  cursor: pointer;
+}
+
+.modal__title--read {
+  font-size: 20px;
+  line-height: 1.4;
+  color: $primary-text-color;
+  margin-bottom: 32px;
+}
+
+.modal__text--read {
+  margin-top: 32px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: justify;
+  color: $primary-text-color;
+}
