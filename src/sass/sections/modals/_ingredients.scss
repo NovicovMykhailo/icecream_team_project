@@ -4,7 +4,7 @@
   box-sizing: border-box;
 
   background-color: $secondary-page-color;
-  border: $border_std $accent-color;
+  outline: $border_std $accent-color;
   border-radius: 10px;
   text-align: center;
   margin: auto;
@@ -175,7 +175,7 @@
   padding: 11px 16px;
   font-family: inherit;
   box-shadow: none;
-  transition: box-shadow $anim-std 150ms;
+  transition: box-shadow $anim-std 150ms, border-color $anim-std;
   &::placeholder {
     color: $primary-text-color;
   }
@@ -185,11 +185,12 @@
   resize: none;
   height: 84px;
   
-  transition: box-shadow $anim-std;
+  transition: box-shadow $anim-std 150ms, border-color $anim-std;
   
   &:focus, &:hover{
     outline: transparent;
-    box-shadow: 0 0 2px 1px $accent-color;
+    border-color: rgba(248, 210, 78, 0.7);
+    box-shadow: 0 0 2px 3px rgba(248, 172, 78, 0.1);
 
   }
 
@@ -207,5 +208,6 @@
 input:focus, input:hover{
 
   outline: transparent;
-  box-shadow: 0 0 2px 1px $accent-color;
+  border-color: $accent-color;
+  box-shadow: 0 0 2px 3px rgba(248, 172, 78, 0.1);
 }
