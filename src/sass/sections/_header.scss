@@ -68,18 +68,18 @@ header {
   }
 }
 //
-.menu {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
+// .menu {
+//   display: flex;
+//   padding: 0;
+//   margin: 0;
+//   list-style: none;
+// }
 
-@media (max-width: 767px) {
-  .menu {
-    display: none;
-  }
-}
+// @media (max-width: 767px) {
+//   .menu {
+//     display: none;
+//   }
+// }
 
 .mobile-menu__icon{
   fill: currentColor;
@@ -111,7 +111,7 @@ header {
   outline: none;
 
   color: #fff;
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $tablet) {
     display: none;
   }
 }
