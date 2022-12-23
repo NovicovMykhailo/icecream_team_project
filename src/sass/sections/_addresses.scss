@@ -1,20 +1,28 @@
+// .address {
+//   background-color: $primary-page-color;
+//   // position: relative;
+// }
+
 .address {
-  background-color: $primary-page-color;
+  background-image: linear-gradient(to bottom,
+      transparent 353px,
+      $primary-page-color 353px,
+      $primary-page-color );
 }
 
-.container {
-  position: relative;
-  // top: 353px;
-}
+// .container {
+//   // position: absolute;
+//   // top: 353px;
+// }
 
 .contacts-list {
   margin-right: auto;
-    margin-left: auto;
+  margin-left: auto;
   @media screen and (min-width: $tablet) {
     display: flex;
     justify-content: center;
     gap: 16px;
-      margin-bottom: 0;
+    margin-bottom: 0;
     @media screen and (min-width: $tablet) {
       // gap: 16px;
       // margin-bottom: 0;
@@ -258,3 +266,6 @@
   }
 }
 
+.button-arrow{
+  fill: #000000;
+}
