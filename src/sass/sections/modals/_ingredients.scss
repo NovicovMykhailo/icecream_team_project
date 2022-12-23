@@ -1,7 +1,7 @@
-
 .ingredients {
   width: 280px;
   height: 968px;
+  box-sizing: border-box;
 
   background-color: $secondary-page-color;
   border: $border_std $accent-color;
@@ -9,15 +9,26 @@
   text-align: center;
   margin: auto;
   padding: 28px 20px;
+  position: sticky;
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform $anim-std 150ms, opacity $anim-std 100ms;
 
-  max-height: 92%;
-  // overflow-y: auto;
+  .backdrop.is-hidden & {
+    opacity: 0;
+    transform: translateY(-30%);
+  }
+    max-height: 92%;
+  overflow-y:scroll;
 
   @media screen and (min-width: $tablet) {
     width: 568px;
     height: 996px;
     padding: 32px 40px;
   }
+}
+.ingredients__clz-btn {
+  position: absolute;
 }
 
 .ingredients__title {
@@ -144,14 +155,14 @@
   margin-top: 0;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 24px;
+  // margin-bottom: 24px;
   display: flex;
   flex-direction: column;
   gap: 16px;
 
   @media screen and (min-width: $tablet) {
     width: 368px;
-    margin-bottom: 32px;
+    // margin-bottom: 32px;
   }
 }
 
@@ -162,6 +173,9 @@
   border: 1px solid #84a178;
   border-radius: 10px;
   padding: 11px 16px;
+  font-family: inherit;
+  box-shadow: none;
+  transition: box-shadow $anim-std 150ms;
   &::placeholder {
     color: $primary-text-color;
   }
@@ -170,8 +184,28 @@
 .ingredients-form__comments {
   resize: none;
   height: 84px;
+  
+  transition: box-shadow $anim-std;
+  
+  &:focus, &:hover{
+    outline: transparent;
+    box-shadow: 0 0 2px 1px $accent-color;
+
+  }
+
 }
 
 .ingredients__button {
-  margin: 0 auto;
+  margin: 24px auto 0 auto;
+  @media screen and (min-width:$tablet){
+    margin: 32px auto 0 auto;
+  }
+ 
+}
+
+
+input:focus, input:hover{
+
+  outline: transparent;
+  box-shadow: 0 0 2px 1px $accent-color;
 }

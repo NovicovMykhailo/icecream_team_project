@@ -1,7 +1,11 @@
-<div class="backdrop">
+<div class="backdrop is-hidden" ingredients-modal>
   <div class="ingredients">
     <!-- Clz Btn -->
-    <button class="modal__close-btn" type="button" data-modal-close>
+    <button
+      class="modal__close-btn ingredients__clz-btn"
+      type="button"
+      ingredients-modal-close
+    >
       <svg width="20" height="20">
         <use href="./images/ice-cream-vectors.svg#cross_icon"></use>
       </svg>
@@ -48,30 +52,35 @@
         <li class="ingredients-list__item">10g</li>
       </ul>
     </div>
-    <div class="ingredients-form">
-      <input
-        class="ingredients-form__username"
-        type="text"
-        name="Name"
-        id=""
-        placeholder="Name"
-      />
-      <input
-        class="ingredients-form__telephone"
-        type="tel"
-        name="Phone_Number"
-        id=""
-        placeholder="Phone"
-      />
-      <textarea
-        class="ingredients-form__comments"
-        name="Comment"
-        id=""
-        cols="5"
-        rows="10"
-        placeholder="Comment"
-      ></textarea>
-    </div>
-    <button type="submit" class="button ingredients__button">Submit</button>
+    <form autocomplete="off">
+      <div class="ingredients-form">
+        <input
+          class="ingredients-form__username"
+          type="text"
+          name="Name"
+          id="Name"
+          placeholder="Name"
+          required minlength="3"
+        />
+        <input
+          class="ingredients-form__telephone"
+          type="tel"
+          name="Phone_Number"
+          id="tel"
+          placeholder="Phone"
+       required
+        />
+        <textarea
+          class="ingredients-form__comments"
+          name="Comment"
+          id="Cjmment"
+          cols="5"
+          rows="10"
+          placeholder="Comment"
+          required minlength="8"
+        ></textarea>
+      </div>
+      <button type="submit" class="button ingredients__button">Submit</button>
+    </form>
   </div>
 </div>
