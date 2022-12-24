@@ -6,6 +6,8 @@
 
   z-index: 1000;
 
+  box-sizing: border-box;
+
   text-align: center;
 
   background-color: $secondary-page-color;
@@ -46,9 +48,11 @@
 }
 
 .location__map {
+  display: block;
   width: 224px;
   height: 199px;
   margin-bottom: 24px;
+  border-radius: 10px;
 
   @media screen and (min-width: $tablet) {
     width: 448px;

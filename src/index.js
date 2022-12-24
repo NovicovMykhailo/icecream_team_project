@@ -9,3 +9,7 @@ import './js/reviews.slick.js';
 import './js/read-more.js';
 // modal ingredients
 import './js/modal-ingredients.js';
+// modal franchise
+import './js/modal-franchise.js';
+// modal location
+import './js/modal-location.js';
