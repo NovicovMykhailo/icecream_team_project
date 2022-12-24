@@ -1,61 +1,77 @@
 .hero {
-  padding-bottom: 236px;
-  padding-top: 38px;
-
+  position: relative;
   background-color: $primary-page-color;
   background-image: url(../images/hero/dots_mob@1x.png);
   background-repeat: no-repeat;
   background-position: bottom;
-
-  @media screen and (min-width:768px) {
+  background-size: contain;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/hero/dots_mob@2x.png);
+  }
+  @media screen and (min-width: $tablet) {
     background-image: url(../images/hero/dots_tab@1x.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/hero/dots_tab@2x.png);
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    background-image: url(../images/hero/dots_desct@1x.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/hero/dots_desct@2x.png);
+    }
+  }
+}
+.hero__container {
+  padding-bottom: 236px;
+  padding-top: 38px;
+  @media screen and (min-width: $tablet) {
     padding-bottom: 24px;
     padding-top: 14px;
   }
-  @media screen and (min-width:1200px) {
-    background-image: url(../images/hero/dots_desct@1x.png);
+  @media screen and (min-width: $desktop) {
     padding-bottom: 105px;
     padding-top: 45px;
   }
 }
-.hero__coontainer{
-  position: relative;
-}
-.hero__tablet--group{
-  @media screen and (min-width:768px) {
+.hero__tablet--group {
+  @media screen and (min-width: 768px) {
     display: flex;
   }
 }
-
-.hero__container {
-  margin-left: 0;
-  margin-right: 0;
-}
-
 .hero_ic--left {
   position: absolute;
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
+  display: none;
+  // @media screen and (max-width: 767px) {
+  // }
   @media screen and (min-width: 768px) {
     bottom: 0;
     left: 32px;
   }
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     bottom: -35px;
     left: 16px;
   }
 }
 
-.hero_ic--right{
+.hero_ic--right {
   position: absolute;
-  bottom: -236px;
-  left: 50%;
-  transform: translateX(-45%);
+  bottom: 0;
+  left: 27%;
+
+  @media screen and (min-width: $mobile) {
+    left: 30%;
+  }
   @media screen and (min-width: 768px) {
-  left: 408px;
-  transform: translateX(0);
-  bottom: -24px;
+    left: 408px;
+    transform: translateX(0);
+    bottom: -24px;
   }
   @media screen and (min-width: 1200px) {
     left: 652px;
@@ -64,6 +80,7 @@
 }
 
 .hero__title {
+  max-width: 247px;
   color: $secondary-text-color;
   font-family: Seymour One;
   font-size: 26px;
@@ -71,14 +88,15 @@
   text-transform: uppercase;
   margin-bottom: 32px;
   @media screen and (min-width: $mobile) {
-    width: 247px;}
+    width: 247px;
+  }
   @media screen and (min-width: $tablet) {
     margin-bottom: 24px;
   }
   @media screen and (min-width: 1200px) {
-      font-size: 38px;
-      line-height: calc(48 / 38);
-      width: 367px;
+    font-size: 38px;
+    line-height: calc(48 / 38);
+    width: 367px;
   }
 }
 
@@ -91,14 +109,14 @@
   }
 }
 
-.hero__group{
+.hero__group {
   @media screen and (min-width: 768px) {
     display: flex;
   }
 }
-.hollow-button__hero{
+.hollow-button__hero {
   box-sizing: border-box;
-    @media screen and (max-width:1199px) {
+  @media screen and (max-width: 1199px) {
     font-family: Montserrat;
     font-size: 12px;
     font-weight: 600;
@@ -106,8 +124,8 @@
     text-align: center;
     padding: 10px 22px;
   }
-  
-  @media screen and (min-width:1200px) {
+
+  @media screen and (min-width: 1200px) {
     padding: 12px 34px;
   }
 }
@@ -126,7 +144,7 @@
     margin-top: 28px;
   }
 }
-.chain__number{
+.chain__number {
   font-family: Montserrat;
   font-size: 28px;
   font-weight: 900;
@@ -138,13 +156,13 @@
     line-height: calc(56 / 46);
   }
 }
-.chain__item{
+.chain__item {
   text-align: end;
-  &:not(:last-child){
+  &:not(:last-child) {
     margin-bottom: 20px;
   }
 }
-.chain__text{
+.chain__text {
   font-family: Montserrat;
   font-size: 8px;
   font-weight: 400;
@@ -156,10 +174,10 @@
     line-height: calc(17 / 14);
   }
 }
-.hero__text{
-  font-family: Montserrat; 
-  font-style: normal; 
-  font-size: 12px; 
+.hero__text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-size: 12px;
   line-height: calc(17 / 12);
   color: $secondary-text-color;
   margin-bottom: 12px;
@@ -173,14 +191,15 @@
   }
 }
 
-.hero__arrow{
+.hero__arrow {
   fill: $secondary-text-color;
   transition: $anim-std;
-  &:hover, &:focus {
-      fill: #0a8817;
-    }
+  &:hover,
+  &:focus {
+    fill: #0a8817;
+  }
 }
-.arrow__btn{
+.arrow__btn {
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -195,10 +214,8 @@
     margin-left: 216px;
     margin-top: 39px;
   }
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     margin-left: 257px;
     margin-top: 109px;
   }
 }
-
-
