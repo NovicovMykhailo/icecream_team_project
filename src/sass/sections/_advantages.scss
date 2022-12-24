@@ -16,12 +16,9 @@
   display: flex;
   justify-content: center;
   padding: 0;
+  width: 230px;
 
-  @media screen and (min-width: $mobile) {
-    width: 230px;
-  }
-
-  @media screen and (min-width: $tablet) {
+   @media screen and (min-width: $tablet) {
     width: 616px;
    }
   @media screen and (min-width: $desktop) {
