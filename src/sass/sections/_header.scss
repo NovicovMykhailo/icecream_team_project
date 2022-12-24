@@ -10,8 +10,14 @@ header {
   }
 }
 .logo__link {
-  width: 48px;
+
+  width: 40px;
   height: auto;
+  @media screen and (min-width: $tablet) {
+    width: 48px;
+    height: auto;
+  }
+
   @media screen and (min-width: $desktop) {
     width: 60px;
     height: auto;
