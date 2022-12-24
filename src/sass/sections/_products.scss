@@ -98,9 +98,14 @@ align-items: center;
     margin-bottom: 168px;
 
 
-    width: 280px;
+   
     height: 420px;
     border-radius: 24px;
+    @media screen and (min-width: $mobile){
+        width: 280px;
+    }
+
+   
 
     &::after {
         content: '';
