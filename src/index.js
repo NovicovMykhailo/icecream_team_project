@@ -1,5 +1,5 @@
-// 
-import './js/mobile-menu.js'
+// mobile-menu
+import './js/mobile-menu.js';
 // gallery Script
 import './js/gallery.slider.js';
 // Customer reviews slider-slick

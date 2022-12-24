@@ -1,39 +1,28 @@
-<div class="container header-container">
-  <a href="./index.html" class="logo__link">
-    <img
-      srcset="
-        ./images/header/logo_s_x1.png  40w,
-        ./images/header/logo_s_x2.png  80w,
-        ./images/header/logo_m_x1.png  48w,
-        ./images/header/logo_m_x2.png  96w,
-        ./images/header/logo_l_x1.png  60w,
-        ./images/header/logo_l_x2.png 120w
-      "
-      sizes="(min-width: 1200px) 60px, (min-width: 768px) 48px, (min-width: 480px) 40px"
-      src="./images/header/logo_l_x1.png"
-      alt="logo"
-    />
-  </a>
-  <nav class="nav">
-    <ul class="nav__list">
-      <li class="nav__item"><a class="nav__link link" href="">Home</a></li>
-      <li class="nav__item">
-        <a class="nav__link link" href="">How it’s made?</a>
-      </li>
-      <li class="nav__item">
-        <a class="nav__link link" href="">Our products</a>
-      </li>
-      <li class="nav__item"><a class="nav__link link" href="">Contact</a></li>
-    </ul>
-  </nav>
-  <button
-    class="menu-toggle js-open-menu"
-    aria-expanded="false"
-    aria-controls="mobile-menu"
-  >
-    <svg class="mobile-menu__icon" width="32" height="32">
-      <use href="./images/ice-cream-vectors.svg#icon-mobile-menu-open"></use>
-    </svg>
-  </button>
-  <button class="button nav__btn" type="submit">Buy now</button>
-</div>
+(() => {
+    const mobileMenu = document.querySelector('.js-menu-container');
+    const openMenuBtn = document.querySelector('.js-open-menu');
+    const closeMenuBtn = document.querySelector('.js-close-menu');
+  
+    const toggleMenu = () => {
+      const isMenuOpen =
+        openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
+      openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
+      mobileMenu.classList.toggle('is-open');
+  
+      const scrollLockMethod = !isMenuOpen
+        ? 'disableBodyScroll'
+        : 'enableBodyScroll';
+      bodyScrollLock[scrollLockMethod](document.body);
+    };
+  
+    openMenuBtn.addEventListener('click', toggleMenu);
+    closeMenuBtn.addEventListener('click', toggleMenu);
+  
+    // Close the mobile menu on wider screens if the device orientation changes
+    window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
+      if (!e.matches) return;
+      mobileMenu.classList.remove('is-open');
+      openMenuBtn.setAttribute('aria-expanded', false);
+      bodyScrollLock.enableBodyScroll(document.body);
+    });
+  })();
