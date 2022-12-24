@@ -6,7 +6,6 @@
 }
 
 .modal {
-  max-width: 248px;
   min-height: 459px;
 
   box-sizing: border-box;
@@ -19,16 +18,21 @@
   border: $border_std $accent-color;
 
   transform: scale(1);
+  transition: transform $anim-std;
+
+
   max-width: 568px;
   transition: transform $anim-std;
-  @media screen and (min-width: $mobile) {
-    max-width: 280px;
+
+  @media screen and (min-width: 480px) {
+    width: 280px;
   }
-  @media screen and (min-width: 780px) {
-    max-width: 568px;
+  @media screen and (min-width: $tablet) {
+    width: 568px;
     min-height: 449px;
     padding: 32px 60px;
   }
+ 
 }
 
 .modal__video {
@@ -39,7 +43,7 @@
   @media screen and (min-width: $mobile) {
     width: 224px;
   }
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: $tablet), (min-width: $desktop) {
     width: 100%;
   }
   @media screen and (max-width: $desktop) {
