@@ -1,4 +1,5 @@
-
+// 
+import './js/mobile-menu.js'
 // gallery Script
 import './js/gallery.slider.js';
 // Customer reviews slider-slick
