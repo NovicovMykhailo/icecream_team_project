@@ -23,7 +23,7 @@
   text-align: center;
 
   width: 280px;
-  max-height: 991px;
+  min-height: 991px;
 
   background-color: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -114,7 +114,7 @@ list-style: none;
   position: relative;
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 52px;
   flex-direction: column;
   @media screen and (min-width: 768px) {
     margin-bottom: 60px;
@@ -132,17 +132,27 @@ list-style: none;
   
       width: 132px;
       height: 136px;
+
+      @media screen and (min-width: 768px) {
+        top: 35%;
+        left: 0;
+      }
   
       top: 35%;
-      left:0;
+      left: 46px
     }
   
     &::before {
       content: '';
       position: absolute;
       z-index: -10;
+
+      @media screen and (min-width: 768px) {
+        top: 7px;
+        left: 0;
+      }
       top: 7px;
-      left: 0;
+      left: 46px;
   
       width: 132px;
       height: 132;
@@ -164,16 +174,28 @@ list-style: none;
       width: 132px;
       height: 136px;
   
-      top: 35%;
-      left: 0;
-    }
+      @media screen and (min-width: 768px) {
+          top: 35%;
+          left: 0;
+        }
+      
+        top: 35%;
+        left: 46px;
+      }
+    
   
     &::before {
       content: '';
       position: absolute;
       z-index: -10;
-      top: 7px;
-      left: 0;
+
+      @media screen and (min-width: 768px) {
+          top: 7px;
+          left: 0;
+        }
+      
+        top: 7px;
+        left: 46px;
   
       width: 132px;
       height: 132;
@@ -194,16 +216,28 @@ list-style: none;
         width: 132px;
         height: 136px;
     
+        @media screen and (min-width: 768px) {
+            top: 35%;
+            left: 0;
+          }
+        
         top: 35%;
-        left: 0;
-      }
+        left: 46px;
+        }
+      
     
       &::before {
         content: '';
         position: absolute;
         z-index: -10;
+
+        @media screen and (min-width: 768px) {
+          top: 7px;
+          left: 0;
+          }
+        
         top: 7px;
-        left: 0;
+        left: 46px;
     
         width: 132px;
         height: 132;
@@ -222,7 +256,7 @@ list-style: none;
 .checkbox_y:checked~.checkbox-yellow::after {
   background-color: rgba(239, 212, 120, 1);
 }
-.checkbox_r:checked~.checkbox-yellow::after {
+.checkbox_r:checked~.checkbox-red::after {
   background-color: rgba(214, 147, 109, 1);
 }
 .buy-now__img{
@@ -347,7 +381,7 @@ list-style: none;
 
     @media screen and (min-width: 768px) {
       min-height: 84px;
-      margin-bottom: 0;
+      margin-bottom: 32px;
     }
 }
 

@@ -1,54 +1,67 @@
 <div class="backdrop is-hidden" data-modal>
   <div class="modal">
-    <button type="button" class="modal-btn" data-modal-open>
-      <svg class="modal-icon" width="11" height="11">
-        <use></use>
-      </svg>
-    </button>
+    <div class="modal__container">
+      <button type="button" class="modal-btn" data-modal-close>
+        <svg class="modal-icon" width="20" height="20">
+          <use href="./images/ice-cream-vectors.svg#cross_icon"></use>
+        </svg>
+      </button>
 
-    <div class="form-group">
-      <strong class="str">Залиште свої дані, ми вам передзвонимо</strong>
-      <form class="form" autocomplete="off">
-        <div class="form-field">
-          <input type="text" class="form-input" name="name" id="name">
-          <label for="name" class="form-label">Ім'я</label>
-          <span class="icon">
-            <svg class="form__icon" width="12" height="12">
-              <use></use>
-            </svg>
-          </span>
-        </div>
-        <div class="form-field">
-          <input type="tel" class="form-input" name="tel" id="tel">
-          <label for="tel" class="form-label">Телефон</label>
-          <span class="icon">
-            <svg class="form__icon" width="13" height="13">
-              <use></use>
-            </svg>
-          </span>
-        </div>
-        <div class="form-field">
-          <input type="email" class="form-input" name="email" id="email">
-          <label for="email" class="form-label">Пошта</label>
-          <span class="icon">
-            <svg class="form__icon" width="15" height="12">
-              <use></use>
-            </svg>
-          </span>
-        </div>
-        <div class="form-field comment">
-          <textarea class="form-comment" name="comment" id="comment" placeholder="Введіть текст"></textarea>
-          <label class="form-label comment" for="comment">Коментар</label>
-        </div>
-        <div class="checkbox-group">
-          <input id="checkbox" class="checkbox" type="checkbox" name="checkbox">
-          <label for="checkbox" class="checkbox-label">
-            Погоджуюся з розсилкою та приймаю
-            <a class="check-link" href=""> Умови договору</a>
-          </label>
-        </div>
-      </form>
-      <button class="submit-btn main-btn" type="submit">Відправити</button>
+      <div class="form-group">
+        <h2 class="str">Buy now</h2>
+
+        <ul class="modal__list">
+          <li class="modal__items modal__items--green">
+
+            <input id="checkbox_g" class="checkbox_g" type="checkbox" name="checkbox">
+            <label for="checkbox_g" class="buy-now__text checkbox-green">
+              <img class="buy-now__img" loading="lazy" src="./images/buy-now/img_cream@1x.png" srcset="
+                          ./images/buy-now/img_cream@1x.png 1x,
+                          ./images/buy-now/img_cream@1x.png 2x" width="132" height="132" alt="Ice cream">
+              ice cream
+            </label>
+          </li>
+          <li class="modal__items modal__items--yellow">
+            <input id="checkbox_y" class="checkbox_y" type="checkbox" name="checkbox">
+            <label for="checkbox_y" class="buy-now__text checkbox-yellow">
+              <img class="buy-now__img" src="./images/buy-now/img_coffee@1x.png" srcset="
+            ./images/buy-now/img_coffee@1x.png 1x,
+            ./images/buy-now/img_coffee@1x.png 2x" width="132" height="132" alt="ice coffee">
+              ice coffee
+            </label>
+          </li>
+          <li class="modal__items modal__items--red">
+            <input id="checkbox_r" class="checkbox_r" type="checkbox" name="checkbox">
+            <label for="checkbox_r" class="buy-now__text checkbox-red">
+              <img class="buy-now__img" src="./images/buy-now/img_shake@1x.png" srcset="
+            ./images/buy-now/img_shake@1x.png 1x,
+            ./images/buy-now/img_shake@1x.png 2x" width="132" height="132" alt="milkshake">
+              milkshake
+            </label>
+          </li>
+        </ul>
+
+        <form class="form" autocomplete="off">
+          <div class="form-field">
+            <input type="text" class="form-input" name="name" id="name" placeholder=" " pattern="[A-Za-z]{3,15}">
+            <label for="name" class="form-label">Name</label>
+          </div>
+
+          <div class="form-field">
+            <input type="tel" class="form-input" name="tel" id="tel" placeholder=" " pattern="[0-9]{3,16}">
+            <label for="tel" class="form-label">Phone</label>
+          </div>
+
+          <div class="form-field comment">
+            <textarea class="form-comment" name="comment" id="comment" placeholder=" "></textarea>
+            <label class="form-label comment" for="comment">Comment</label>
+          </div>
+          <button class="button submit__btn" type="submit">Submit</button>
+        </form>
+      </div>
     </div>
   </div>
 </div>
+
+<!-- =================================== -->
+<script src="./js/buy.js"></script>
