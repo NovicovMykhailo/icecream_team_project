@@ -4,7 +4,7 @@
   box-sizing: border-box;
 
   background-color: $secondary-page-color;
-  border: $border_std $accent-color;
+  outline: $border_std $accent-color;
   border-radius: 10px;
   text-align: center;
   margin: auto;
@@ -155,43 +155,20 @@
   margin-top: 0;
   margin-left: auto;
   margin-right: auto;
-  // margin-bottom: 24px;
+ 
   display: flex;
   flex-direction: column;
   gap: 16px;
 
   @media screen and (min-width: $tablet) {
     width: 368px;
-    // margin-bottom: 32px;
-  }
-}
-
-.ingredients-form__username,
-.ingredients-form__telephone,
-.ingredients-form__comments {
-  background: rgba(248, 210, 78, 0.1);
-  border: 1px solid #84a178;
-  border-radius: 10px;
-  padding: 11px 16px;
-  font-family: inherit;
-  box-shadow: none;
-  transition: box-shadow $anim-std 150ms;
-  &::placeholder {
-    color: $primary-text-color;
+ 
   }
 }
 
 .ingredients-form__comments {
   resize: none;
   height: 84px;
-  
-  transition: box-shadow $anim-std;
-  
-  &:focus, &:hover{
-    outline: transparent;
-    box-shadow: 0 0 2px 1px $accent-color;
-
-  }
 
 }
 
@@ -200,12 +177,4 @@
   @media screen and (min-width:$tablet){
     margin: 32px auto 0 auto;
   }
- 
-}
-
-
-input:focus, input:hover{
-
-  outline: transparent;
-  box-shadow: 0 0 2px 1px $accent-color;
 }
