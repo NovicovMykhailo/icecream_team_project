@@ -11,10 +11,10 @@ header {
 }
 .logo__link {
   width: 48px;
-  height: 44px;
+  height: auto;
   @media screen and (min-width: $desktop) {
     width: 60px;
-    height: 65px;
+    height: auto;
   }
 }
 
