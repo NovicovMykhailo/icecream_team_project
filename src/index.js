@@ -8,3 +8,4 @@ import './js/reviews.slick.js';
 import './js/read-more';
 // modal ingredients
 import'./js/modal-ingredients.js';
+
