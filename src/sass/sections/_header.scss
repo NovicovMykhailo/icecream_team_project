@@ -1,32 +1,44 @@
-header{
+header {
   background-color: $primary-page-color;
   padding-top: 12px;
-  @media screen and (min-width: $tablet) {
-    padding-top: 20px;
-  }
+  padding-bottom: 12px;
+ 
+
   @media screen and (min-width: $desktop) {
     padding-top: 8px;
     padding-bottom: 8px;
+  }
+}
+.logo__link {
+
+  width: 40px;
+  height: auto;
+  @media screen and (min-width: $tablet) {
+    width: 48px;
+    height: auto;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 60px;
+    height: auto;
   }
 }
 
 .header-container {
   display: flex;
   align-items: center;
-  
+  @media screen and (min-width: $desktop) {
+    align-items: baseline;
+  }
 }
 
 .nav {
-  @media screen and (min-width: $tablet) {
-    display: none;
-  }
+  display: none;
 
   @media screen and (min-width: $desktop) {
     display: block;
     margin-left: 308px;
   }
-
-
 }
 
 .nav__list {
@@ -45,6 +57,177 @@ header{
 }
 
 .nav__btn {
-  padding: 12px 36px;
+  display: none;
+  border: none;
+  // font-family: 'Montserrat';
+
+
+    @media screen and (min-width: $tablet) {
+      display: inline-flex;
+      gap: 4px;
+      align-items: center;
+      padding: 12px 36px;
+      margin-left: 32px;
+    }
+
+
+  @media screen and (min-width: $desktop) {
+    margin-left: auto;
+  }
+}
+
+.buy-now-icon {
+  fill: currentColor;
+}
+
+// MOBILE MENU
+
+.mobile-menu {
+  padding-bottom: 64px;
+  text-align: center;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 51px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 76px;
+    }
+  }
+
+  &__logo {
+    display: block;
+    width: 48px;
+    height: 44px;
+    margin-top: 12px;
+    margin-left: 32px;
+    @media screen and (min-width: $tablet) {
+      margin-top: 20px;
+    }
+  }
+  &__btn {  
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-right: 20px;
+    margin-top: 16px;
+
+  
+
+    @media screen and (min-width: $tablet) {
+      margin-right: 32px;
+      margin-top: 32px;
+    }
+  }
+  __btn {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-right: 20px;
+    margin-top: 16px;
+
+    // @media screen and (min-width: $mobile) {
+
+    // }
+    @media screen and (min-width: $tablet) {
+      margin-right: 32px;
+      margin-top: 32px;
+    }
+  }
+  &__list {
+    margin-bottom: 110px;
+
+    & > :not(:last-child) {
+      margin-bottom: 32px;
+
+      @media screen and (min-width: $tablet) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+  &__item {
+    display: flex;
+    justify-content: center;
+  }
+  &__link {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.22;
+
+    color: $secondary-text-color;
+
+    &.streaming-link {
+      color: $primary-text-color;
+    }
+
+    @media screen and (min-width: $tablet) {
+      font-size: 48px;
+      line-height: 1.23;
+    }
+  }
+  &__icon {
+    fill: currentColor;
+  }
+}
+
+.menu-toggle {
+  @include flex_centering(inline-flex);
+  min-height: 32px;
+  min-width: 32px;
+
   margin-left: auto;
+
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+
+  color: #fff;
+
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform $anim-std;
+  background-color: $primary-page-color;
+
+  @media screen and (min-width: $tablet) {
+    background-color: #97af8d;
+  }
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.mobile-menu__btn--buy-now {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: 64px;
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.buy-now-icon {
+  fill: currentColor;
 }

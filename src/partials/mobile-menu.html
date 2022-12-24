@@ -1,0 +1,50 @@
+<div class="mobile-menu menu-container js-menu-container" id="mobile-menu">
+  <div class="mobile-menu__top">
+    <a href="./index.html" class="mobile-menu__logo">
+      <img
+        srcset="
+          ./images/header/mob-menu-logo_s_x1.png  40w,
+          ./images/header/mob-menu-logo_s_x2.png  80w,
+          ./images/header/mob-menu-logo_m_x1.png  48w,
+          ./images/header/mob-menu-logo_m_x2.png  96w
+          
+        "
+        sizes="(min-width: 768px) 48px, (min-width: 480px) 40px"
+        src="./images/header/mob-menu-logo_s_x1.png"
+        alt="logo"
+      />
+    </a>
+    <button
+      class="mobile-menu__btn menu-toggle js-close-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg class="mobile-menu__icon" width="32" height="32">
+        <use href="./images/ice-cream-vectors.svg#icon-mobile-menu-close"></use>
+      </svg>
+    </button>
+  </div>
+  
+
+  <ul class="mobile-menu__list">
+    <li class="mobile-menu__item">
+      <a href="./index.html" class="mobile-menu__link link">Home</a>
+    </li>
+    <li class="mobile-menu__item">
+      <a href="#about" class="mobile-menu__link link streaming-link"
+        >How it’s made?</a
+      >
+    </li>
+    <li class="mobile-menu__item">
+      <a href="#products" class="mobile-menu__link link">Our products</a>
+    </li>
+    <li class="mobile-menu__item">
+      <a href="#addresses" class="mobile-menu__link link">Contact</a>
+    </li>
+  </ul>
+  <button class="button mobile-menu__btn--buy-now" type="submit" data-modal-open>Buy now
+    <svg class="buy-now-icon" width="12" height="12">
+      <use href="./images/ice-cream-vectors.svg#icon-buy-now"></use>
+    </svg>
+  </button>
+</div>
