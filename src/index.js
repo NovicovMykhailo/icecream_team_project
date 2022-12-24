@@ -6,7 +6,6 @@ import './js/gallery.slider.js';
 import './js/slick.js';
 import './js/reviews.slick.js';
 //Modal Read more
-import './js/read-more';
+import './js/read-more.js';
 // modal ingredients
-import'./js/modal-ingredients.js';
-
+import './js/modal-ingredients.js';
