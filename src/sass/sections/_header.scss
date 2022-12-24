@@ -52,6 +52,7 @@ header {
 
 .nav__btn {
   display: none;
+  border: none;
   // font-family: 'Montserrat';
 
 
@@ -99,7 +100,8 @@ header {
       margin-top: 20px;
     }
   }
-  &__btn {
+  &__btn {  
+    border: none;
     display: flex;
     align-items: center;
     gap: 4px;
