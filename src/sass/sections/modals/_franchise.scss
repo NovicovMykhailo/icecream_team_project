@@ -27,7 +27,7 @@
   align-items: center;
 
   background-color: transparent;
-    border: none;
+  border: none;
 }
 
 .franchise__label {
@@ -88,10 +88,11 @@
 
   transition: outline $anim-std;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     outline-color: #0a8817;
   }
-  
+
   &:disabled {
     outline-color: $time-text-color;
   }
