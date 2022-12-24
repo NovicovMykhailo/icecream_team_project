@@ -10,6 +10,10 @@ header {
     padding-bottom: 8px;
   }
 }
+.logo__link{
+  width: 48px;
+  height: 44px;
+}
 
 .header-container {
   display: flex;
@@ -17,9 +21,7 @@ header {
 }
 
 .nav {
-  @media screen and (min-width: $mobile) {
-    display: none;
-  }
+  display: none;
 
   @media screen and (min-width: $desktop) {
     display: block;
@@ -98,6 +100,8 @@ header {
 
 .mobile-menu__logo{
   display: block;
+  width: 48px;
+  height: 44px;
   margin-top: 12px;
   margin-left: 32px;
   @media screen and (min-width: $tablet) {
@@ -188,10 +192,9 @@ header {
 
   transform: translateX(100%);
   transition: transform $anim-std;
+  background-color: $primary-page-color;
 
-  @media screen and (min-width: $mobile) {
-    background-color: $primary-page-color;
-  }
+ 
   @media screen and (min-width: $tablet) {
     background-color: #97af8d;
   }
