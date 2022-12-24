@@ -58,7 +58,8 @@
   </section>
 
   <!-- =================================== -->
-<div class="backdrop " data-modal>
+
+<div class="backdrop is-hidden" data-modal>
   <div class="modal">
     <div class="modal__container">
       <button type="button" class="modal-btn" data-modal-close>
@@ -68,25 +69,60 @@
       </button>
       
       <div class="form-group">
-        <strong class="str">Buy now</strong>
-        <form class="form" autocomplete="off">
+        <h2 class="str">Buy now</h2>
 
+        <ul class="modal__list">
+          <li class="modal__items modal__items--green">
+
+            <input id="checkbox_g" class="checkbox_g" type="checkbox" name="checkbox">
+            <label for="checkbox_g" class="checkbox-green">
+              <img class="buy-now__img" loading="lazy" src="./images/buy-now/img_cream@1x.png" srcset="
+                          ./images/buy-now/img_cream@1x.png 1x,
+                          ./images/buy-now/img_cream@1x.png 2x" width="132" height="132" alt="Ice cream">
+              <p class="buy-now__text">ice cream</p>
+            </label>
+          </li>
+          <li class="modal__items modal__items--yellow">
+            <input id="checkbox_y" class="checkbox_y" type="checkbox" name="checkbox">
+            <label for="checkbox_y" class="checkbox-yellow">
+            <img class="buy-now__img"
+            src="./images/buy-now/img_coffee@1x.png" 
+            srcset="
+            ./images/buy-now/img_coffee@1x.png 1x,
+            ./images/buy-now/img_coffee@1x.png 2x"
+            width="132" height="132"
+            alt="ice coffee"><p class="buy-now__text">ice coffee</p></label></li>
+          <li class="modal__items modal__items--red">
+            <input id="checkbox_r" class="checkbox_r" type="checkbox" name="checkbox">
+            <label for="checkbox_r" class="checkbox-red">
+            <img class="buy-now__img"
+            src="./images/buy-now/img_shake@1x.png" 
+            srcset="
+            ./images/buy-now/img_shake@1x.png 1x,
+            ./images/buy-now/img_shake@1x.png 2x"
+            width="132" height="132"
+            alt="milkshake"><p class="buy-now__text">milkshake</p></label></li>
+        </ul>
+
+        <form class="form" autocomplete="off">
           <div class="form-field">
-            <input type="text" class="form-input" name="name" id="name" placeholder=" ">
+            <input type="text" class="form-input" name="name" id="name" placeholder=" " 
+            pattern="[A-Za-z]{3,15}">
             <label for="name" class="form-label">Name</label>
           </div>
 
           <div class="form-field">  
-              <input type="tel" class="form-input" name="tel" id="tel" placeholder=" ">
-              <label for="tel" class="form-label">Phone</label>
+              <input type="tel" class="form-input" name="tel" id="tel" placeholder=" " pattern="[0-9]{3,16}">
+              <label for="tel" class="form-label"
+              >Phone</label>
           </div>
       
           <div class="form-field comment">
             <textarea class="form-comment" name="comment" id="comment" placeholder=" "></textarea>
             <label class="form-label comment" for="comment">Comment</label>
           </div>
+          <button class="button submit__btn" type="submit">Submit</button>
         </form>
-        <button class="button submit__btn" type="submit">Submit</button>
       </div>
     </div>
   </div>
