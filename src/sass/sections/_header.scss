@@ -1,6 +1,7 @@
-header{
+header {
   background-color: $primary-page-color;
   padding-top: 12px;
+  padding-bottom: 12px;
   @media screen and (min-width: $tablet) {
     padding-top: 20px;
   }
@@ -13,11 +14,10 @@ header{
 .header-container {
   display: flex;
   align-items: center;
-  
 }
 
 .nav {
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $mobile) {
     display: none;
   }
 
@@ -25,8 +25,6 @@ header{
     display: block;
     margin-left: 308px;
   }
-
-
 }
 
 .nav__list {
@@ -45,6 +43,177 @@ header{
 }
 
 .nav__btn {
-  padding: 12px 36px;
+  display: none;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    padding: 12px 36px;
+    margin-left: 32px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-left: auto;
+  }
+}
+
+.mobile-menu__btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  
+  @media screen and (min-width: $mobile) {
+    margin-right: 20px;
+    margin-top: 16px;
+  }
+  @media screen and (min-width: $tablet) {
+    margin-right: 32px;
+    margin-top: 32px;
+  }
+}
+
+.buy-now-icon {
+  fill: currentColor;
+}
+
+// MOBILE MENU
+
+.mobile-menu{
+  padding-bottom: 64px;
+}
+
+.mobile-menu__top{
+  display: flex;
+  align-items: center;
+  @media screen and (min-width: $mobile) {
+    margin-bottom: 51px;
+  }
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 76px;
+  }
+}
+
+.mobile-menu__logo{
+  display: block;
+  margin-top: 12px;
+  margin-left: 32px;
+  @media screen and (min-width: $tablet) {
+    margin-top: 20px;
+  }
+}
+
+.mobile-menu__btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  
+  @media screen and (min-width: $mobile) {
+    margin-right: 20px;
+    margin-top: 16px;
+  }
+  @media screen and (min-width: $tablet) {
+    margin-right: 32px;
+    margin-top: 32px;
+  }
+}
+
+.mobile-menu__list>:not(:last-child){
+  @media screen and  (min-width: $mobile) {
+    margin-bottom: 32px;
+  }
+  @media screen and  (min-width: $tablet) {
+    margin-bottom: 40px;
+  }
+}
+
+.mobile-menu__item{
+  display: flex;
+  justify-content: center;
+}
+
+.mobile-menu__link {
+  font-weight: 700;
+  color: $secondary-text-color;
+
+  &.streaming-link {
+    color: $primary-text-color;
+  }
+
+  @media screen and (min-width: $mobile) {
+    font-size: 32px;
+    line-height: 1.22;
+  }
+  @media screen and (min-width: $tablet) {
+    font-size: 48px;
+    line-height: 1.23;
+  }
+}
+
+.mobile-menu__icon {
+  fill: currentColor;
+}
+
+.menu-toggle {
+  @include flex_centering(flex);
+  min-height: 32px;
+  min-width: 32px;
+
   margin-left: auto;
+
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+
+  color: #fff;
+  
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform $anim-std;
+
+  @media screen and (min-width: $mobile) {
+    background-color: $primary-page-color;
+  }
+  @media screen and (min-width: $tablet) {
+    background-color: #97af8d;
+  }
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.mobile-menu__btn--buy-now{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: 64px;
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.buy-now-icon {
+  fill: currentColor;
 }
