@@ -161,4 +161,9 @@
   display: block;
   margin: 0 auto;
   padding: 12px 34px;
+  min-width: 114px;
+
+  @media screen and (min-width: $tablet) {
+    min-width: 121px;
+  }
 }
