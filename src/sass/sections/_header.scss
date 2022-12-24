@@ -52,17 +52,18 @@ header {
 
 .nav__btn {
   display: none;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
+  // font-family: 'Montserrat';
 
-  @media screen and (min-width: $tablet) {
-    display: flex;
-    gap: 4px;
-    align-items: center;
-    padding: 12px 36px;
-    margin-left: 32px;
-  }
+
+    @media screen and (min-width: $tablet) {
+      display: inline-flex;
+      gap: 4px;
+      align-items: center;
+      padding: 12px 36px;
+      margin-left: 32px;
+    }
+
+
   @media screen and (min-width: $desktop) {
     margin-left: auto;
   }
@@ -104,6 +105,8 @@ header {
     gap: 4px;
     margin-right: 20px;
     margin-top: 16px;
+
+  
 
     @media screen and (min-width: $tablet) {
       margin-right: 32px;
