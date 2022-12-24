@@ -1,0 +1,165 @@
+// Розмічаю стандартні налаштування секції
+
+.products {
+    padding: 60px 0px;
+    align-items: center;
+}
+.products__examples {  
+    @include flex_centering(flex);
+    flex-direction: column;
+    gap: 30px;
+    
+    @media screen and (min-width: $tablet){
+        @include flex-grid (3, 30px);
+        flex-direction: row;
+    }    
+}
+// Головний тайтл
+.products__title {
+    font-family: 'Seymour One',sans-serif;
+    color: $sub-title-color;
+    font-weight: 400;
+    font-size: 30px;     
+    line-height: 1.27;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: center;
+
+    margin-bottom: 148px;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 34px;
+        line-height: 1.26;
+    }
+    @media screen and (min-width: $desktop) {
+        font-size: 36px;
+        line-height: 1.25;
+        letter-spacing: 0.06em;
+    }   
+}
+.products__title-label {
+    font-family: 'Montserrat',sans-serif;
+    display: block;
+    text-align: center;
+    color: $sub-title-color;
+    font-weight: 800;
+    font-size: 18px;     
+    line-height: 1.22;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+
+
+    @media screen and (min-width: $tablet) {
+        font-size: 22px;
+        line-height: 1.23;
+    }
+    @media screen and (min-width: $desktop) {
+        font-size: 30px;
+        line-height: 1.23;
+        letter-spacing: 0.04em;
+    }   
+}
+
+
+
+
+
+
+.products button {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+   margin-top: auto;
+   margin-bottom: 10px;
+    
+}
+.products__card-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding-top: 123px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 168px;
+
+
+    width: 280px;
+    height: 420px;
+    border-radius: 24px;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: $ice-cream-card-color;
+        top: -120px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &.ice-cream::before {
+        background-image: url('/src/images/products/ice-cream_1х.png');
+        box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+}
+   &.ice-coffee::before {
+            background-image: url('/src/images/products/ice-coffee_1х.png');
+    }
+
+    &.milkshakes::before {
+        background-image: url('/src/images/products/milkshakes_1х.png');
+    }
+}
+.ice-cream {
+    background-color: $ice-cream-card-color;
+}
+.ice-coffee {
+    background-color: $ice-coffee-card-color;
+}
+.milkshakes {
+    background-color: $milkshake-card-color;
+}
+// Розмічаю картки
+//Тайтл
+.products__examples-title {
+    font-family: 'Montserrat',sans-serif;
+    color: $sub-title-color;
+    font-weight: 700;
+    font-size: 20px;     
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: center;
+
+    margin-bottom: 40px;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 22px;
+        line-height: 1.23;
+    }
+    @media screen and (min-width: $desktop) {
+        font-size: 30px;
+        line-height: 1.23;
+    }   
+}
+//Дескріпшн
+.products__examples-discription {
+    font-family: 'Montserrat',sans-serif;
+    color: $sub-title-color;
+    font-weight: 400;
+    font-size: 14px;     
+    line-height: 176%;
+    letter-spacing: 0.04em;
+    text-align: center;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 16px;
+    }   
+}
+
+
