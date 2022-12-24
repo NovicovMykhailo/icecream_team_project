@@ -43,13 +43,15 @@
       box-sizing: border-box;
         margin: 0 auto;
       text-align: left;
-      width: 280px;
+      // width: 280px;
       // width: 100%;
       padding: 40px 32px;
       margin-bottom: 16px;
       background-color: $secondary-text-color;
       box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
       border-radius: 24px;
+
+
       @media screen and (min-width: $tablet) {
         width: 224px;
         margin-bottom: 0;
