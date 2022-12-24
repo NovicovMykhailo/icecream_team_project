@@ -2,7 +2,7 @@ header {
   background-color: $primary-page-color;
   padding-top: 12px;
   padding-bottom: 12px;
-  // padding-top: 20px;
+ 
 
   @media screen and (min-width: $desktop) {
     padding-top: 8px;
@@ -10,7 +10,6 @@ header {
   }
 }
 .logo__link {
-  // display: inline-block;
   width: 48px;
   height: 44px;
   @media screen and (min-width: $desktop) {
@@ -22,7 +21,6 @@ header {
 .header-container {
   display: flex;
   align-items: center;
-  // margin-top: 28px;
   @media screen and (min-width: $desktop) {
     align-items: baseline;
   }
@@ -78,6 +76,7 @@ header {
 
 .mobile-menu {
   padding-bottom: 64px;
+  text-align: center;
 
   &__top {
     display: flex;
