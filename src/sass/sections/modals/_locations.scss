@@ -11,6 +11,12 @@
   background-color: $secondary-page-color;
   border-radius: 10px;
   border: $border_std $accent-color;
+
+  @media screen and (min-width: $tablet) {
+    width: 568px;
+    height: 458px;
+    padding: 32px 60px;
+  }
 }
 
 .button__cross {
@@ -30,12 +36,25 @@
   letter-spacing: 0.06em;
 
   color: $primary-text-color;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 32px;
+
+    font-size: 20px;
+    line-height: calc(28 / 20);
+  }
 }
 
 .location__map {
   width: 224px;
   height: 199px;
   margin-bottom: 24px;
+
+  @media screen and (min-width: $tablet) {
+    width: 448px;
+    height: 260px;
+    margin-bottom: 32px;
+  }
 }
 
 .location__link {
@@ -65,5 +84,10 @@
   &:disabled {
     background-color: #ababab;
     color: $black-text-color;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    line-height: calc(17 / 14);
   }
 }
