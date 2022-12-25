@@ -24,7 +24,7 @@
     }
   }
   .contacts-list {
-    max-width: 280px;
+    // max-width: 280px;
     margin: 0 auto;
     margin-bottom: 16px;
     @media screen and (min-width: $tablet) {
@@ -228,12 +228,10 @@
     margin-top: 20px;
     gap: 16px;
     @media screen and (min-width: $tablet) {
-      // flex-wrap: nowrap;
       flex-direction: row;
       margin-top: 40px;
     }
     @media screen and (min-width: $desktop) {
-      // flex-wrap: nowrap;
       margin-top: 60px;
     }
   }
@@ -242,6 +240,6 @@
   }
   .button-arrow {
     margin-left: 4px;
-    fill: #000000;
+    fill: currentColor;
   }
 }
