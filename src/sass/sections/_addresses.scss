@@ -24,17 +24,17 @@
     }
   }
   .contacts-list {
+    max-width: 280px;
     margin: 0 auto;
     margin-bottom: 16px;
-    @media screen and (min-width: $mobile) {
-      max-width: 280px;
-    }
     @media screen and (min-width: $tablet) {
+      max-width: 224px;
       display: flex;
       justify-content: center;
       gap: 16px;
       margin-bottom: 0;
       @media screen and (min-width: $desktop) {
+        max-width: 368px;
         gap: 32px;
         margin-bottom: 0;
       }
@@ -43,8 +43,6 @@
       box-sizing: border-box;
         margin: 0 auto;
       text-align: left;
-      // width: 280px;
-      // width: 100%;
       padding: 40px 32px;
       margin-bottom: 16px;
       background-color: $secondary-text-color;
