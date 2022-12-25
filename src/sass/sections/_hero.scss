@@ -30,18 +30,6 @@
       background-image: url('../images/hero/dots_desktop2x.png');
     }
   }
-  animation-name: dotsAnimation;
-  animation-duration: 600ms;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: 1;
-}
-@keyframes dotsAnimation {
-  0% {
-    background-image: linear-gradient($primary-page-color, $primary-page-color);
-  }
-  100% {
-    background-image: linear-gradient(transparent, transparent);
-  }
 }
 .hero__container {
   position: relative;
