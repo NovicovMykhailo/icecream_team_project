@@ -7,7 +7,9 @@
   position: absolute;
   top: -26px;
   z-index: +10;
-width: 95wv;
+  width: 95wv;
+  margin-left: auto;
+  margin-right: auto;
   @media screen and (min-width: $mobile) {
     width: 280px;
   }
@@ -19,9 +21,18 @@ width: 95wv;
   }
   &__item {
     overflow: hidden;
-
+    width: 100%;
     padding-left: 2px;
     padding-right: 2px;
+    @media screen and (min-width: $mobile) {
+      width: 280px;
+    }
+    @media screen and (min-width: $tablet) {
+      width: 704px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 1013px;
+    }
   }
   &__item img {
     @include flex_centering;
@@ -29,6 +40,15 @@ width: 95wv;
     height: 130px;
     width: 100%;
     object-fit: contain;
+    @media screen and (min-width: $mobile) {
+      width: 280px;
+    }
+    @media screen and (min-width: $tablet) {
+      width: 704px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 1013px;
+    }
   }
 
   & .slick-arrow {
