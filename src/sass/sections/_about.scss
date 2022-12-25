@@ -57,15 +57,12 @@
   @media screen and (min-width: $tablet) {
     position: relative;
     display: flex;
-    max-width: 704px;
+    width: 704px;
   }
-
   @media screen and (min-width: $desktop) {
-    max-width: 1168px;
+    width: 1168px;
   }
-
 }
-
 .about__image {
   position: relative;
   display: flex;
@@ -226,11 +223,12 @@
 }
 
 .about__paragraph-third {
-  @media screen and (max-width: 767.98px) {
+  @media screen and (max-width: $tablet) {
     display: none;
   }
 
   @media screen and (min-width: $tablet) {
+    display: block;
     margin-bottom: 29px;
     font-size: 12px;
     line-height: calc(23px / 12px);
