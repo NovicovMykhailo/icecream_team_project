@@ -58,11 +58,11 @@
   @media screen and (min-width: $tablet) {
     position: relative;
     display: flex;
-    max-width: 704px;
+    width: 704px;
    }
 
   @media screen and (min-width: $desktop) {
-  max-width: 1168px;
+  width: 1168px;
 }
 }
 
