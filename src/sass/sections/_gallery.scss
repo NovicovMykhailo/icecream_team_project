@@ -10,7 +10,12 @@
   width: 95wv;
   margin-left: auto;
   margin-right: auto;
-  @media screen and (min-width: $mobile) {
+ 
+  &__item {
+    width: 100%;
+    padding-left: 2px;
+    padding-right: 2px;
+     @media screen and (min-width: $mobile) {
     width: 280px;
   }
   @media screen and (min-width: $tablet) {
@@ -19,27 +24,13 @@
   @media screen and (min-width: $desktop) {
     width: 1013px;
   }
-  &__item {
-    overflow: hidden;
-    width: 100%;
-    padding-left: 2px;
-    padding-right: 2px;
-    @media screen and (min-width: $mobile) {
-      width: 280px;
-    }
-    @media screen and (min-width: $tablet) {
-      width: 704px;
-    }
-    @media screen and (min-width: $desktop) {
-      width: 1013px;
-    }
   }
   &__item img {
     @include flex_centering;
     border-radius: 8px;
     height: 130px;
     width: 100%;
-    object-fit: contain;
+    object-fit: fill;
     @media screen and (min-width: $mobile) {
       width: 280px;
     }
