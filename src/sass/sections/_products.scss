@@ -70,11 +70,6 @@ align-items: center;
     }
 }
 
-
-
-
-
-
 .products button {
     background: none;
     color: inherit;
@@ -84,7 +79,6 @@ align-items: center;
     cursor: pointer;
     margin-top: auto;
     margin-bottom: 10px;
-
 }
 
 .products__card-item {
@@ -96,17 +90,13 @@ align-items: center;
     padding-left: 40px;
     padding-right: 40px;
     margin-bottom: 168px;
-
-
    
     height: 420px;
     border-radius: 24px;
     @media screen and (min-width: $mobile){
         width: 280px;
     }
-
    
-
     &::after {
         content: '';
         position: absolute;
