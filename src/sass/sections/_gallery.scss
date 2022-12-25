@@ -37,6 +37,8 @@
   }
   &__item {
     text-align: center;
+    padding-right: 2px;
+    padding-left: 2px;
   }
   &__item img {
     @include flex_centering;
