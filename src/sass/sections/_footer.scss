@@ -24,17 +24,17 @@ footer {
     padding-top: 100px;
   }
 }
+
 .footer__container {
   display: flex;
   flex-direction: column;
-  width: 100%;
 
   @media screen and (min-width: $tablet) {
     flex-direction: row;
     justify-content: space-between;
   }
   @media screen and (min-width: $desktop) {
-    width: 1200px;
+    justify-content: space-between;
   }
 }
 
@@ -43,10 +43,13 @@ footer {
   flex-direction: column;
 
   justify-content: space-between;
-  align-items: center;
 
+  width: 100%;
   @media screen and (min-width: $tablet) {
     display: flex;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: 1200px;
   }
 }
 
@@ -81,6 +84,7 @@ footer {
     line-height: 32px;
     letter-spacing: 0.04em;
     margin-bottom: 8px;
+    padding-left: 0;
   }
 
   @media screen and (min-width: $desktop) {
@@ -101,6 +105,8 @@ footer {
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
+  width: 300px;
+
   color: #fcfcfc;
 
   text-align: start;
@@ -120,12 +126,12 @@ footer {
 //----ADDRESS
 
 .footer__address {
+  min-width: 300px;
   @media screen and (min-width: $tablet) {
     padding-top: 61px;
   }
   @media screen and (min-width: $desktop) {
     padding-top: 18px;
-    width: 340px;
   }
 }
 
@@ -156,9 +162,8 @@ footer {
   font-weight: 700;
   font-size: 12px;
   line-height: 186%;
-  /* or 22px */
 
-  //text-align: right;
+  letter-spacing: 0.02em;
 
   color: #131313;
   @media screen and (min-width: $tablet) {
@@ -168,7 +173,6 @@ footer {
   @media screen and (min-width: $desktop) {
     font-size: 16px;
     line-height: 186%;
-    letter-spacing: 0.02em;
   }
 }
 
@@ -178,20 +182,19 @@ footer {
   font-weight: 700;
   font-size: 12px;
   line-height: 186%;
-
+  letter-spacing: 0.02em;
   color: #fcfcfc;
+
   @media screen and (min-width: $tablet) {
     font-size: 14px;
     line-height: 186%;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $desktop) {
     font-weight: 700;
     font-size: 16px;
     line-height: 186%;
     /* identical to box height, or 30px */
-
-    letter-spacing: 0.02em;
   }
 }
 
