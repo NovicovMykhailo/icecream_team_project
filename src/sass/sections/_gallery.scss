@@ -7,7 +7,7 @@
   object-position: center;
 }
 .slideshow-mobile {
-  max-width: 280px;
+  width: 280px;
   height: 130px;
   border-radius: 8px;
   top: -32px;
@@ -19,7 +19,7 @@
   width: 704px;
   height: 327px;
   border-radius: 18px;
-  top: 0px;
+  top: -144px;
 
   display: none;
   @media screen and (min-width: $tablet) and (max-width: $desktop) {
