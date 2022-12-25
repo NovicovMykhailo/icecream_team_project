@@ -3,6 +3,7 @@
   background-image: url('../images/hero/dots_mob@1x.png');
   background-repeat: no-repeat;
   background-position: bottom;
+  background-size: contain;
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -13,34 +14,46 @@
   }
   @media screen and (min-width: $tablet) {
     background-size: $tablet;
-    background-image: url(../images/hero/dots_tab@1x.png);
+    background-image: url('../images/hero/dots_tab@1x.png');
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/hero/dots_tab@2x.png);
+      background-image: url('../images/hero/dots_tab@2x.png');
     }
   }
   @media screen and (min-width: $desktop) {
-     background-size: $desktop;
-    background-image: url(../images/hero/dots_desktop.png);
+    background-size: $desktop;
+    background-image: url('../images/hero/dots_desktop.png');
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/hero/dots_desktop2x.png);
+      background-image: url('../images/hero/dots_desktop2x.png');
     }
   }
-  &__container {
-    position: relative;
-    padding-bottom: 236px;
-    padding-top: 38px;
-    @media screen and (min-width: $tablet) {
-      padding-bottom: 183px;
-      padding-top: 14px;
-    }
-    @media screen and (min-width: $desktop) {
-      padding-bottom: 334px;
-      padding-top: 33px;
-    }
+  animation-name: dotsAnimation;
+  animation-duration: 600ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+@keyframes dotsAnimation {
+  0% {
+    background-image: linear-gradient($primary-page-color, $primary-page-color);
+  }
+  100% {
+    background-image: linear-gradient(transparent, transparent);
+  }
+}
+.hero__container {
+  position: relative;
+  padding-bottom: 236px;
+  padding-top: 38px;
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 183px;
+    padding-top: 14px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 334px;
+    padding-top: 33px;
   }
 }
 .hollow-button__hero {
