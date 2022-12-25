@@ -1,14 +1,14 @@
 .gallery {
   position: relative;
-  padding-right: 1px;
-  padding-left: 1px;
+  padding-right: 2px;
+  padding-left: 2px;
   padding-bottom: 138px;
-  @media screen and (min-width: $mobile){
+  @media screen and (min-width: $mobile) {
     padding-left: 20px;
     padding-right: 20px;
   }
   @media screen and (min-width: $tablet) {
-  padding-bottom: 243px;
+    padding-bottom: 243px;
   }
   @media screen and (min-width: $desktop) {
     padding-bottom: 424px;
@@ -27,6 +27,7 @@
     width: 704px;
     height: 327px;
     top: -141px;
+    left: 32px;
   }
   @media screen and (min-width: $desktop) {
     width: 1013px;
@@ -35,8 +36,6 @@
     left: 94px;
   }
   &__item {
-    padding-left: 2px;
-    padding-right: 2px;
     text-align: center;
   }
   &__item img {
@@ -45,6 +44,7 @@
     height: 130px;
     object-fit: fill;
     width: 98vw;
+    margin: 0;
     @media screen and (min-width: $mobile) {
       width: 280px;
     }

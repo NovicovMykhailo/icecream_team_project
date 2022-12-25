@@ -3,5 +3,6 @@
      dots: true,
      easing: 'ease-in-out',
      infinite: false,
+     fade: true
       });
     });
