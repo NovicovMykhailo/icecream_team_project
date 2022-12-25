@@ -1,6 +1,12 @@
 .gallery {
   position: relative;
+  padding-right: 1px;
+  padding-left: 1px;
   padding-bottom: 138px;
+  @media screen and (min-width: $mobile){
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   @media screen and (min-width: $tablet) {
   padding-bottom: 243px;
   }
@@ -31,12 +37,14 @@
   &__item {
     padding-left: 2px;
     padding-right: 2px;
+    text-align: center;
   }
   &__item img {
     @include flex_centering;
     border-radius: 8px;
     height: 130px;
     object-fit: fill;
+    width: 98vw;
     @media screen and (min-width: $mobile) {
       width: 280px;
     }
