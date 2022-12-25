@@ -8,7 +8,6 @@
   @media screen and (min-width: $tablet) {
     padding: 0 76px;
   }
-
   @media screen and (min-width: $desktop) {
     padding: 0 16px;
     max-width: 1200px;
@@ -110,7 +109,7 @@
   height: 50px;
   border-radius: 50%;
 }
-.advantages__title {
+.advantages__text {
   margin-bottom: 16px;
 
   font-weight: 700;
