@@ -1,6 +1,7 @@
 .hero {
   position: relative;
   background-color: $primary-page-color;
+  overflow: hidden;
   &__container {
     position: relative;
     padding-bottom: 236px;
