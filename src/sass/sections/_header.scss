@@ -2,7 +2,6 @@ header {
   background-color: $primary-page-color;
   padding-top: 12px;
   padding-bottom: 12px;
- 
 
   @media screen and (min-width: $desktop) {
     padding-top: 8px;
@@ -10,7 +9,6 @@ header {
   }
 }
 .logo__link {
-
   width: 40px;
   height: auto;
   @media screen and (min-width: $tablet) {
@@ -61,15 +59,13 @@ header {
   border: none;
   // font-family: 'Montserrat';
 
-
-    @media screen and (min-width: $tablet) {
-      display: inline-flex;
-      gap: 4px;
-      align-items: center;
-      padding: 12px 36px;
-      margin-left: 32px;
-    }
-
+  @media screen and (min-width: $tablet) {
+    display: inline-flex;
+    gap: 4px;
+    align-items: center;
+    padding: 12px 36px;
+    margin-left: 32px;
+  }
 
   @media screen and (min-width: $desktop) {
     margin-left: auto;
@@ -106,15 +102,13 @@ header {
       margin-top: 20px;
     }
   }
-  &__btn {  
+  &__btn {
     border: none;
     display: flex;
     align-items: center;
     gap: 4px;
     margin-right: 20px;
     margin-top: 16px;
-
-  
 
     @media screen and (min-width: $tablet) {
       margin-right: 32px;
@@ -127,18 +121,12 @@ header {
     gap: 4px;
     margin-right: 20px;
     margin-top: 16px;
-
-    // @media screen and (min-width: $mobile) {
-
-    // }
     @media screen and (min-width: $tablet) {
       margin-right: 32px;
       margin-top: 32px;
     }
   }
   &__list {
-    margin-bottom: 110px;
-
     & > :not(:last-child) {
       margin-bottom: 32px;
 
@@ -170,6 +158,11 @@ header {
   &__icon {
     fill: currentColor;
   }
+}
+.mobile-menu_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .menu-toggle {
@@ -216,13 +209,11 @@ header {
 }
 
 .mobile-menu__btn--buy-now {
+  align-self: center;
   display: flex;
   align-items: center;
   gap: 4px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: 64px;
+  width: 152px;
   @media screen and (min-width: $tablet) {
     display: none;
   }
