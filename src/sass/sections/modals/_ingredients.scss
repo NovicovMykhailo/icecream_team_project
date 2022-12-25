@@ -1,7 +1,7 @@
 .ingredients {
   width: 280px;
   height: 968px;
-  box-sizing: border-box;
+  box-sizing: content-box;
 
   background-color: $secondary-page-color;
   outline: $border_std $accent-color;
@@ -18,8 +18,8 @@
     opacity: 0;
     transform: translateY(-30%);
   }
-    max-height: 92%;
-  overflow-y:scroll;
+  max-height: 92%;
+  overflow-y: scroll;
 
   @media screen and (min-width: $tablet) {
     width: 568px;
@@ -48,6 +48,13 @@
 .Ingredients__illustration {
   display: inline-block;
   border-radius: 50%;
+
+  margin-bottom: 13px;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 24px;
+  }
+}
+.green {
   background: linear-gradient(
       0deg,
       rgba(156, 190, 143, 0.7),
@@ -55,11 +62,26 @@
     ),
     #d9d9d9;
   box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
-  margin-bottom: 13px;
-  @media screen and (min-width: $tablet) {
-    margin-bottom: 24px;
-  }
 }
+.yellow {
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+}
+.red {
+  background: linear-gradient(
+      0deg,
+      rgba(213, 117, 63, 0.7),
+      rgba(213, 117, 63, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
+}
+
 .Ingredients__image {
   position: relative;
   top: -7px;
@@ -67,6 +89,7 @@
 .calories {
   margin: 0 auto;
   @include flex_grid(4, 8px);
+  width: 240px;
 
   color: $primary-text-color;
   font-weight: 400;
@@ -88,7 +111,7 @@
   @include flex_grid(2, 8px);
   justify-content: center;
   flex-direction: column;
-  border: $border_std #9cbe8f;
+  
   border-radius: 40px;
   text-align: center;
 
@@ -97,6 +120,16 @@
   @media screen and (min-width: $tablet) {
     @include flex_grid(2, 10px);
     padding-bottom: 15px;
+  }
+  &--green{
+    border: $border_std #9cbe8f;
+  }
+  &--yellow{
+    border: $border_std #EFD478;
+  }
+  &--red{
+    border: $border_std #D6936D
+    ;
   }
 }
 
@@ -113,9 +146,7 @@
   border-radius: 50%;
   width: 43px;
   height: 43px;
-  background: #9cbe8f;
-  border: 2px solid #9cbe8f;
-  box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+
 
   @media screen and (min-width: $tablet) {
     font-size: 12px;
@@ -124,7 +155,24 @@
     height: 53px;
   }
 }
+.calories-green{
+  background: #9cbe8f;
+  border: 2px solid rgb(156, 190, 143);
+  box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
 
+}
+.calories-yellow{
+  background:#EFD478;
+  border: 2px solid#EFD478;
+  box-shadow: 0px 6px 20px rgba(214, 167, 15, 0.462);
+
+}
+.calories-red{
+  background: #D6936D;
+  border: 2px solid #D6936D;
+  box-shadow: 0px 6px 20px rgba(181, 83, 25, 0.5);
+
+}
 .ingredients__dscr {
   font-weight: 500;
   font-size: 20px;
@@ -155,26 +203,24 @@
   margin-top: 0;
   margin-left: auto;
   margin-right: auto;
- 
+
   display: flex;
   flex-direction: column;
   gap: 16px;
 
   @media screen and (min-width: $tablet) {
     width: 368px;
- 
   }
 }
 
 .ingredients-form__comments {
   resize: none;
   height: 84px;
-
 }
 
 .ingredients__button {
   margin: 24px auto 0 auto;
-  @media screen and (min-width:$tablet){
+  @media screen and (min-width: $tablet) {
     margin: 32px auto 0 auto;
   }
 }
