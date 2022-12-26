@@ -110,7 +110,7 @@
   outline: 1px solid transparent;
   outline-offset: -1px;
 
-  transition: outline $anim-std;
+  // transition: outline $anim-std;
 
   @media screen and (min-width: $tablet) {
     padding: 11px 16px;
@@ -139,7 +139,7 @@
   outline: 1px solid transparent;
   outline-offset: -1px;
 
-  transition: outline $anim-std;
+  // transition: outline $anim-std;
 
   &:hover,
   &:focus {
