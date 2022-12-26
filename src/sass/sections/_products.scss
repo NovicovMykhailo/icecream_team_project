@@ -270,3 +270,15 @@ align-items: center;
         font-size: 16px;
     }
 }
+.products-btn{
+    fill: currentColor;
+    box-shadow: $shadow transparent;
+    transition: fill $anim-std, box-shadow $anim-std ;
+   
+
+    &:hover, &:focus{
+        fill: #947575;
+
+
+    }
+}
