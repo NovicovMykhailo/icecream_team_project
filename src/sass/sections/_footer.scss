@@ -264,6 +264,13 @@ footer {
   border-radius: 50%;
   background-color: #f8d24e;
 }
+.socials__icon {
+  width: 100%;
+  height: 100%;
+  fill: #84a178;
+  transition: fill $anim-std;
+
+}
 
 .social__links:hover {
   fill: #fcfcfc;
@@ -278,8 +285,4 @@ footer {
   fill: #fcfcfc;
 }
 
-.socials__icon {
-  width: 100%;
-  height: 100%;
-  fill: #84a178;
-}
+

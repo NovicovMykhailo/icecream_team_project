@@ -90,7 +90,12 @@ align-items: center;
     padding-top: 123px;
     padding-left: 40px;
     padding-right: 40px;
+    &:not(:last-child){
     margin-bottom: 168px;
+    @media screen and (min-width: $tablet){
+        margin-bottom: 0;
+    }
+}
    
     min-height: 420px;
     border-radius: 24px;
