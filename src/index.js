@@ -13,3 +13,5 @@ import './js/modal-ingredients.js';
 import './js/modal-franchise.js';
 // modal location
 import './js/modal-location.js';
+//  modal buy
+import './js/buy.js';

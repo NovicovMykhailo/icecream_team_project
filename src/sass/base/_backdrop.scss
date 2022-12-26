@@ -1,17 +1,23 @@
 .backdrop {
-	position: fixed;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background: rgba(0, 0, 0, 0.7);
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	transition: opacity $anim-std;
-	z-index: 10000;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    @media screen and (max-width: $mobile){	
-		padding: 0 15px;
-	}
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 10000;
+  overflow: scroll;
+
+  background-color: rgba(0, 0, 0, 0.2);
+
+  opacity: 1;
+  transition: opacity $anim-std,
+    visibility $anim-std;
+
+  @media screen and (max-width: $mobile) {
+    padding: 0 15px;
+  }
 }
