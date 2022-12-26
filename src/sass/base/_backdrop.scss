@@ -21,3 +21,8 @@
     padding: 0 15px;
   }
 }
+.backdrop.is-hidden {
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+  }
