@@ -212,17 +212,19 @@ footer {
 
   @media screen and (min-width: $tablet) {
     border-top: 1px solid #e1e1e1;
+    
   }
 
   ///------
   @media screen and (min-width: $tablet) {
-    width: 100%;
+   
     margin-top: 32px;
     padding-top: 12px;
   }
 
   @media screen and (min-width: $desktop) {
     margin-top: 60px;
+    width: 1167px;
   }
 }
 
