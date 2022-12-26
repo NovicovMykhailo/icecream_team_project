@@ -12,7 +12,7 @@
     }
     transition: box-shadow $anim-std 150ms, border-color $anim-std;
   
-    &:focus, &:hover{
+    &:focus, &:hover, &:not(:placeholder-shown){
       outline: transparent;
       border-color: rgba(248, 210, 78, 0.7);
       box-shadow: 0 0 2px 3px rgba(248, 172, 78, 0.1);
@@ -24,4 +24,14 @@
         border-color: $accent-color;
         box-shadow: 0 0 2px 3px rgba(248, 172, 78, 0.1);
       }
+      &:focus, &:not(:placeholder-shown) {
+        border-color: $accent-color;
+      }
+ 
+      &:not(:placeholder-shown):invalid {
+        background-color: rgb(255, 0, 0, 0.1);
+      }
+      &:not(:placeholder-shown):valid{
+        background-color: rgba(132, 161, 120, 0.1);}
+    
 }
