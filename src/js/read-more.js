@@ -38,7 +38,7 @@
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.openModalBtn2.addEventListener('click', toggleModal);
+ 
 
   function toggleModal() {
     document.querySelector('[video-modal]').src =

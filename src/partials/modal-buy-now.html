@@ -10,7 +10,7 @@
       <div class="form-group">
         <h2 class="str">Buy now</h2>
 
-        <form class="form" autocomplete="off">
+        <form class="form" >
         <ul class="modal__list">
           <li class="modal__items modal__items--green">
 
@@ -44,17 +44,17 @@
 
       <div class="form-field__wrapper">
           <div class="form-field">
-            <input type="text" class="form-input formfield" name="name" id="name" placeholder="Name" pattern="[A-Za-z]{3,15}">
+            <input type="text" class="form-input formfield" name="name" id="name" placeholder="Name" autocomplete="off"  pattern="[A-Za-z]{3,15}">
             <label for="name" class="form-label">Name</label>
           </div>
 
           <div class="form-field">
-            <input type="tel" class="form-input formfield" name="tel" id="tel" placeholder="Phone" pattern="[0-9]{3,16}">
+            <input type="tel" class="form-input formfield" name="tel" id="tel" placeholder="Phone"  autocomplete="off" pattern="[0-9]{3,16}">
             <label for="tel" class="form-label">Phone</label>
           </div>
 
           <div class="form-field comment">
-            <textarea class="form-comment formfield" name="comment" id="comment" placeholder="Comment" ></textarea>
+            <textarea class="form-comment formfield" name="comment" id="comment"  autocomplete="off" placeholder="Comment" ></textarea>
             <label class="form-label comment" for="comment">Comment</label>
           </div>
           <button class="button submit__btn" type="submit">Submit</button>

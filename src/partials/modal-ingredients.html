@@ -52,7 +52,7 @@
         <li class="ingredients-list__item">10g</li>
       </ul>
     </div>
-    <form autocomplete="off">
+    <form >
       <div class="ingredients-form">
         <input
           class="formfield"
@@ -61,6 +61,7 @@
           id="Name"
           placeholder="Name"
           required minlength="3"
+          autocomplete="off"
         />
         <input
           class="formfield"
@@ -68,6 +69,7 @@
           name="Phone_Number"
           id="tel"
           placeholder="Phone"
+          autocomplete="off"
        required
         />
         <textarea
@@ -78,6 +80,7 @@
           rows="10"
           placeholder="Comment"
           required minlength="8"
+          autocomplete="off"
         ></textarea>
       </div>
       <button type="submit" class="button ingredients__button">Submit</button>
