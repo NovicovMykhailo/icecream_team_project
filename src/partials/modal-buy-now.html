@@ -6,55 +6,56 @@
           <use href="./images/ice-cream-vectors.svg#cross_icon"></use>
         </svg>
       </button>
-
       <div class="form-group">
         <h2 class="str">Buy now</h2>
-
-        <ul class="modal__list">
-          <li class="modal__items modal__items--green">
-
-            <input id="checkbox_g" class="checkbox_g" type="checkbox" name="checkbox">
-            <label for="checkbox_g" class="buy-now__text checkbox-green">
-              <img class="buy-now__img" loading="lazy" src="./images/buy-now/img_cream@1x.png" srcset="
-                          ./images/buy-now/img_cream@1x.png 1x,
-                          ./images/buy-now/img_cream@1x.png 2x" width="132" height="132" alt="Ice cream">
-              ice cream
-            </label>
-          </li>
-          <li class="modal__items modal__items--yellow">
-            <input id="checkbox_y" class="checkbox_y" type="checkbox" name="checkbox">
-            <label for="checkbox_y" class="buy-now__text checkbox-yellow">
-              <img class="buy-now__img" src="./images/buy-now/img_coffee@1x.png" srcset="
-            ./images/buy-now/img_coffee@1x.png 1x,
-            ./images/buy-now/img_coffee@1x.png 2x" width="132" height="132" alt="ice coffee">
-              ice coffee
-            </label>
-          </li>
-          <li class="modal__items modal__items--red">
-            <input id="checkbox_r" class="checkbox_r" type="checkbox" name="checkbox">
-            <label for="checkbox_r" class="buy-now__text checkbox-red">
-              <img class="buy-now__img" src="./images/buy-now/img_shake@1x.png" srcset="
-            ./images/buy-now/img_shake@1x.png 1x,
-            ./images/buy-now/img_shake@1x.png 2x" width="132" height="132" alt="milkshake">
-              milkshake
-            </label>
-          </li>
-        </ul>
-
         <form class="form" autocomplete="off">
-          <div class="form-field">
-            <input type="text" class="form-input" name="name" id="name" placeholder=" " pattern="[A-Za-z]{3,15}">
-            <label for="name" class="form-label">Name</label>
-          </div>
-
-          <div class="form-field">
-            <input type="tel" class="form-input" name="tel" id="tel" placeholder=" " pattern="[0-9]{3,16}">
-            <label for="tel" class="form-label">Phone</label>
-          </div>
-
-          <div class="form-field comment">
-            <textarea class="form-comment" name="comment" id="comment" placeholder=" "></textarea>
-            <label class="form-label comment" for="comment">Comment</label>
+          <ul class="modal__list">
+            <li class="modal__items modal__items--green">
+              <input id="checkbox_g" class="checkbox_g" type="checkbox" name="checkbox">
+              <label for="checkbox_g" class="buy-now__text checkbox-green">
+                  <img 
+                  class="buy-now__img" 
+                  loading="lazy" 
+                  src="./images/buy-now/img_cream@1x.png" 
+                  srcset="
+                      ./images/buy-now/img_cream@1x.png 1x,
+                      ./images/buy-now/img_cream@1x.png 2x" 
+                      width="132" height="132" alt="Ice cream">
+                ice cream
+              </label>
+            </li>
+            <li class="modal__items modal__items--yellow">
+              <input id="checkbox_y" class="checkbox_y" type="checkbox" name="checkbox">
+              <label for="checkbox_y" class="buy-now__text checkbox-yellow">
+                <img class="buy-now__img" src="./images/buy-now/img_coffee@1x.png" srcset="
+                      ./images/buy-now/img_coffee@1x.png 1x,
+                      ./images/buy-now/img_coffee@1x.png 2x" width="132" height="132" alt="ice coffee">
+                ice coffee
+              </label>
+            </li>
+            <li class="modal__items modal__items--red">
+              <input id="checkbox_r" class="checkbox_r" type="checkbox" name="checkbox">
+              <label for="checkbox_r" class="buy-now__text checkbox-red">
+                <img class="buy-now__img" src="./images/buy-now/img_shake@1x.png" srcset="
+                      ./images/buy-now/img_shake@1x.png 1x,
+                      ./images/buy-now/img_shake@1x.png 2x" width="132" height="132" alt="milkshake">
+                milkshake
+              </label>
+            </li>
+          </ul>
+          <div class="buy-now__group">
+            <div class="form-field">
+              <input type="text" class="form-input" name="name" id="name" placeholder=" " pattern="[A-Za-z]{3,15}" required>
+              <label for="name" class="form-label">Name</label>
+            </div>
+            <div class="form-field">
+              <input type="tel" class="form-input" name="tel" id="tel" placeholder=" " pattern="[0-9]{3,16}" required>
+              <label for="tel" class="form-label">Phone</label>
+            </div>
+            <div class="form-field comment">
+              <textarea class="form-comment" name="comment" id="comment" placeholder=" "></textarea>
+              <label class="form-label comment" for="comment">Comment</label>
+            </div>
           </div>
           <button class="button submit__btn" type="submit">Submit</button>
         </form>
