@@ -1,7 +1,7 @@
 // Розмічаю стандартні налаштування секції
 
 .products {
-padding: 60px 0px;
+padding: 60px 0;
 align-items: center;
 }
 
@@ -17,6 +17,7 @@ align-items: center;
         @media screen and (min-width: $desktop) {
             @include flex-grid (3, 29px);
      }
+    //  margin-bottom: 168px;
 }
 
 // Головний тайтл
@@ -103,6 +104,7 @@ align-items: center;
         padding-left: 26px;
         padding-right: 26px;
         min-height: 428px;
+        margin-bottom: 0;
     }
     @media screen and (min-width: $desktop){
         padding-left: 64px;
