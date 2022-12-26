@@ -2,11 +2,13 @@
 (() => {
   const refs = {
     openModalBtn: document.querySelector('[read-modal-open]'),
+    openModalBtn2: document.querySelector('.read-modal-open2'),
     closeModalBtn: document.querySelector('[read-modal-close]'),
     modal: document.querySelector('[read-modal]'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.openModalBtn2.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
@@ -30,10 +32,13 @@
 (() => {
   const refs = {
     openModalBtn: document.querySelector('[read-modal-open]'),
+    // openModalBtn2: document.querySelector('.read-modal-open2'),
+
     modal: document.querySelector('[video-modal]'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.openModalBtn2.addEventListener('click', toggleModal);
 
   function toggleModal() {
     document.querySelector('[video-modal]').src =
