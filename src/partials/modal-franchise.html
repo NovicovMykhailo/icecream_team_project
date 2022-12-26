@@ -13,11 +13,12 @@
     information
     below and we will reach out for additional information. We appreciate your patience.</p>
   <form class="franchise__form" name="franchise__form">
-    <input class="form__field formfield" type="text" name="user_name" id="user_name" placeholder="Name">
-    <input class="form__field formfield" type="tel" name="user_phone" id="user_phone" placeholder="Phone">
-    <input class="form__field formfield" type="email" name="user_mail" id="user_mail" placeholder="Email">
+    <input class="form__field formfield" type="text" name="user_name" id="user_name" placeholder="Name" pattern="[A-Za-z]{3,15}">
+    <input class="form__field formfield" type="tel" name="user_phone" id="user_phone" placeholder="Phone" pattern="[0-9]{3,16}">
+    <input class="form__field formfield" type="email" name="user_mail" id="user_mail" placeholder="Email"pattern= "@[a-zA-Z0-9]">
     <textarea class="form__message formfield" name="user_message" id="user_message" placeholder="Comment"></textarea>
+    <button class="franchise__btn button" type="submit">Submit</button>
   </form>
-  <button class="franchise__btn button" type="submit">Submit</button>
+  
 </div>
 </div>

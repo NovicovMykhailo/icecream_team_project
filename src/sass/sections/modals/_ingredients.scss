@@ -1,7 +1,9 @@
 .ingredients {
   width: 280px;
-  height: 968px;
   box-sizing: content-box;
+  position: relative;
+
+  top: 20px;
 
   background-color: $secondary-page-color;
   outline: $border_std $accent-color;
@@ -9,21 +11,17 @@
   text-align: center;
   margin: auto;
   padding: 28px 20px;
-  position: sticky;
-  transform: translateY(0);
+  transform: scale(1);
   opacity: 1;
-  transition: transform $anim-std 150ms, opacity $anim-std 100ms;
+  transition: transform $anim-std , opacity $anim-std ;
 
   .backdrop.is-hidden & {
     opacity: 0;
-    transform: translateY(-30%);
+    transform: scale(0);
   }
-  max-height: 92%;
-  overflow-y: scroll;
 
   @media screen and (min-width: $tablet) {
     width: 568px;
-    height: 996px;
     padding: 32px 40px;
   }
 }

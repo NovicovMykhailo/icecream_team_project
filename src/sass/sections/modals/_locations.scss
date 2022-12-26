@@ -10,6 +10,15 @@
 
   text-align: center;
 
+  transform: scale(1);
+  opacity: 1;
+  transition: transform $anim-std, opacity $anim-std;
+
+  .backdrop.is-hidden & {
+    opacity: 0;
+    transform: scale(0);
+  }
+
   background-color: $secondary-page-color;
   border-radius: 10px;
   border: $border_std $accent-color;
