@@ -13,23 +13,35 @@
 //     visibility $anim-std;
 // }
 
+// 
 .modal {
-  position: relative;
-  top: 210px;
+  top: 20px;
+
   // position: absolute;
   // top: 560px;
   // top: 55%;
   // left: 50%;
   // transform: translateX(-50%) translateY(-50%);
-  @media screen and (min-width: $tablet) {
-    top: 0;
+  // @media screen and (min-width: $tablet) {
+  //   top: 0;
 
-  }
-
-  text-align: center;
-
+  box-sizing: content-box;
+  position: relative;
   width: 280px;
-  min-height: 991px;
+  // @media screen and (max-width:767px ){
+  //   top: 400px
+
+  // }
+
+
+  // }
+// box-sizing: border-box;
+// position: relative;
+// top: 30vh;
+//   text-align: center;
+
+ 
+  // min-height: 991px;
 
   background-color: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -47,7 +59,7 @@
   }
   @media screen and (min-width: 768px) {
     width: 568px;
-    min-height: 644px;
+    // min-height: 644px;
   }
 }
 
