@@ -63,3 +63,38 @@ img {
   max-width: 100%;
   height: auto;
 }
+.button-scroll{
+  width: 36px;
+  height: 36px;
+  display: block;
+  border-radius: 50%;
+  position: fixed;
+  right: 40px;
+  bottom:25px;
+  fill:currentColor;
+  z-index: 10;
+  padding: 3px;
+
+  display: flex;
+ 
+  justify-content: center;
+
+  background-color: transparent;
+  transition: background-color $anim-std 50ms, bodrer-color $anim-std 50ms;
+  &:hover{
+    background-color: rgba(204, 204, 204, 0.2);
+    outline: 2px solid $ice-coffee-card-color;
+  }
+
+}
+.scroll-btn{
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  fill: #ccc;
+  transition: fill $anim-std;
+  &:hover{
+    fill: $ice-coffee-card-color;
+  }
+
+}

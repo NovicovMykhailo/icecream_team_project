@@ -4,6 +4,7 @@
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
+
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -94,6 +95,10 @@
   left: 50%;
   z-index: 2;
   transform: translateX(-40%);
+  // animation: animate__headShake, 3000ms;
+  animation: 8s wobble-hor-bottom ease;
+  // animation-delay: 2000ms;
+  // animation-duration: 3s;
   @media screen and (min-width: $mobile) {
     left: 83px;
     transform: translateX(0);
