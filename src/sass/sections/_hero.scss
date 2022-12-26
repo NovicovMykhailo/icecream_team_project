@@ -5,16 +5,19 @@
   background-position: bottom;
   background-size: contain;
 
+
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: url('../images/hero/dots_mob@2x.png');
   }
+
   @media screen and (min-width: $mobile) {
-    background-size: 320px;
+    background-size: 480px;
   }
   @media screen and (min-width: $tablet) {
     background-size: $tablet;
+
     background-image: url('../images/hero/dots_tab@1x.png');
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -24,6 +27,7 @@
   }
   @media screen and (min-width: $desktop) {
     background-size: $desktop;
+
     background-image: url('../images/hero/dots_desktop.png');
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -93,19 +97,27 @@
   position: absolute;
   bottom: 0;
   left: 50%;
+  transform: translateX(-50%);
   z-index: 2;
-  transform: translateX(-40%);
-  // animation: animate__headShake, 3000ms;
-  animation: 8s wobble-hor-bottom ease;
+  // transform: translateX(-40%);
+  // animation: animate__headShake infinite 3000ms;
+  // animation: 
+  
+  // wobble-hor-bottom 5s ease 24s infinite;
+  // animate__headShake 20s 0s ease;
+
   // animation-delay: 2000ms;
   // animation-duration: 3s;
-  @media screen and (min-width: $mobile) {
-    left: 83px;
-    transform: translateX(0);
-  }
+  // @media screen and (min-width: $mobile) {
+    // left: 50px;
+  
+  // }
   @media screen and (min-width: $tablet) {
     left: 408px;
+    transform: translateX(0);
+    
   }
+
   @media screen and (min-width: $desktop) {
     left: 652px;
   }
@@ -118,9 +130,10 @@
   line-height: calc(33 / 26);
   text-transform: uppercase;
   margin-bottom: 32px;
-  @media screen and (min-width: $mobile) {
-    width: 247px;
-  }
+  width: 247px;
+  // @media screen and (min-width: $mobile) {
+   
+  // }
   @media screen and (min-width: $tablet) {
     margin-bottom: 24px;
   }

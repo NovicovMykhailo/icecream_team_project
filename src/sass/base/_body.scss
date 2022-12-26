@@ -79,11 +79,13 @@ img {
  
   justify-content: center;
 
-  background-color: transparent;
-  transition: background-color $anim-std 50ms, bodrer-color $anim-std 50ms;
+  background-color:rgba(122, 122, 122,0.5);
+  outline: 2px solid $ice-coffee-card-color;
+  box-shadow: 0px 0px 48px -9px rgba(0,0,0,0.51);
+  transition: background-color $anim-std 50ms, outline $anim-std 50ms;
   &:hover{
-    background-color: rgba(204, 204, 204, 0.2);
-    outline: 2px solid $ice-coffee-card-color;
+    background-color: rgba(122, 122, 122,0.5);
+    outline: 2px solid $accent-color;
   }
 
 }
@@ -91,10 +93,11 @@ img {
   object-fit: contain;
   width: 100%;
   height: 100%;
-  fill: #ccc;
+  fill: $ice-coffee-card-color;
   transition: fill $anim-std;
   &:hover{
-    fill: $ice-coffee-card-color;
+    fill: $accent-color;
+    
   }
 
 }
