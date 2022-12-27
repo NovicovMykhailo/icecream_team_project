@@ -112,12 +112,17 @@ header {
       margin-right: 32px;
       margin-top: 32px;
     }
-    transition: color $anim-std 50ms;
+    transition: color 0 cubic-bezier(0,1.02,0,1.02);
+ 
 
     &:hover,
     &:focus {
       color: $accent-color;
+      background-size: 70px 70px;
+      background-color: #7a7a7a40;
+      border-radius: 50%;
     }
+
   }
 
   &__list {
@@ -227,7 +232,7 @@ header {
 
   color: #fff;
 
-  transition: color $anim-std;
+  transition: color o cubic-bezier(0,1.02,0,1.02);
 
   @media screen and (min-width: $desktop) {
     display: none;
@@ -235,6 +240,9 @@ header {
   &:hover,
   &:focus {
     color: $accent-color;
+    background-size: 70px 70px;
+    background-color: #7a7a7a40;
+    border-radius: 50%;
   }
 }
 
