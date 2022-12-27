@@ -2565,11 +2565,10 @@ footer {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 52px;
 }
 @media screen and (min-width: 768px) {
   .modal__items {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
 }
 
