@@ -143,8 +143,6 @@
   }
 }
 
-
-
 .buy-now__img {
   margin-bottom: 20px;
   @media screen and (min-width: 768px) {
@@ -159,7 +157,6 @@
   line-height: calc(20 / 16);
   letter-spacing: 0.04em;
 }
-
 
 .form-field__wrapper {
   display: flex;
@@ -178,8 +175,6 @@
     display: none;
   }
 }
-
-
 
 .form-label {
   position: absolute;
@@ -310,21 +305,27 @@
 }
 
 .modal__items.and-green:hover,
-.modal__items.and-green:focus {
+.modal__items.and-green:focus,
+.outline-div:hover,
+.outline-div:focus {
   .outline-div {
     background-color: rgba(150, 175, 140, 1);
   }
 }
 
 .modal__items.and-yellow:hover,
-.modal__items.and-yellow:focus {
+.modal__items.and-yellow:focus,
+.outline-div:hover,
+.outline-div:focus {
   .outline-div {
     background-color: rgba(239, 212, 120, 1);
   }
 }
 
 .modal__items.and-red:hover,
-.modal__items.and-red:focus {
+.modal__items.and-red:focus,
+.outline-div:hover,
+.outline-div:focus {
   .outline-div {
     background-color: rgba(214, 147, 109, 1);
   }
