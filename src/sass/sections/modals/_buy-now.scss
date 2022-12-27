@@ -445,6 +445,9 @@
 // serhii scss
 
 .outline_div {
+	position: absolute;
+	top: 35%;
+	
   z-index: -7;
   border: 2px solid rgba(150, 175, 140, 1);
   border-radius: 10px;

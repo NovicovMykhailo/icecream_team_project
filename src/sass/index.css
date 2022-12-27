@@ -2840,6 +2840,8 @@ footer {
 }
 
 .outline_div {
+  position: absolute;
+  top: 35%;
   z-index: -7;
   border: 2px solid rgb(150, 175, 140);
   border-radius: 10px;
