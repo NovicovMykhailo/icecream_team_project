@@ -193,12 +193,18 @@ header {
         gap: 10px;
        padding-bottom: 10px;
      }
-    
+        
     }
 
 
     // =============
     // orientation landscape for desktop
+    @media screen and (min-width: $tablet){
+      .header-container {
+        max-width: 1200px;
+      }
+
+    }
 
   
 

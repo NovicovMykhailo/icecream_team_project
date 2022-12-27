@@ -1,9 +1,12 @@
 .reviews {
   padding-top: 40px;
   padding-bottom: 40px;
+ 
+  
 }
 .slider {
   position: relative;
+  z-index: 9;
 
   margin-right: auto;
   margin-left: auto;
@@ -75,6 +78,7 @@
 .slider__item {
   @include flex_centering;
   flex-direction: column;
+ 
   padding-left: 2px;
   padding-right: 2px;
   &--photo {
@@ -85,6 +89,8 @@
   &--review {
     padding: 35px 39px;
     margin-bottom: 32px;
+
+  
 
     font-style: normal;
     font-weight: 400;

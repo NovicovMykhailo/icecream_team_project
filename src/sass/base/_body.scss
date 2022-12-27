@@ -64,13 +64,14 @@ img {
   height: auto;
 }
 .button-scroll{
-  width: 36px;
-  height: 36px;
+  width: 30px;
+  height: 30px;
+
   display: block;
   border-radius: 50%;
   position: fixed;
-  right: 40px;
-  bottom:25px;
+  right: 20px;
+  bottom: 26px;
   fill:currentColor;
   z-index: 10;
   padding: 3px;
@@ -88,6 +89,23 @@ img {
     outline: 2px solid $accent-color;
   }
 
+
+  @media screen and (min-width: $tablet){ 
+    right: 19px;
+    bottom: 26px; 
+
+
+    width: 36px;
+    height: 36px;
+    }
+    @media screen and (min-width: $desktop){
+      right: 40px;
+      bottom: 25px; 
+
+    }
+
+
+
 }
 .scroll-btn{
   object-fit: contain;
@@ -99,5 +117,35 @@ img {
     fill: $accent-color;
     
   }
+
+}
+
+
+// Orientation Landscape
+
+@media screen and (orientation: landscape){
+
+  @media screen and (min-width:$mobile){
+    .button-scroll{
+      
+      bottom: 15px;
+
+     }
+  }
+
+
+
+
+  @media screen and (min-width:$tablet){
+    .button-scroll{
+      right: 45px;
+      bottom: 25px;
+
+      width: 40px;
+      height: 40px;
+
+     }
+  }
+
 
 }

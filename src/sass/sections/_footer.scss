@@ -233,7 +233,6 @@ footer {
   font-weight: 700;
   font-size: 14px;
   line-height: 152%;
-  /* or 21px */
 
   color: #7a7a7a;
 
@@ -241,6 +240,8 @@ footer {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+
+
 
   @media screen and (min-width: $tablet) {
     line-height: 186%;
@@ -252,6 +253,15 @@ footer {
     line-height: 186%;
     letter-spacing: 0.02em;
     width: auto;
+  }
+
+}
+
+@media screen and (orientation: landscape){
+  @media screen and (min-width:$mobile){
+    .footer__rights--title{
+      width: 100%;
+    }
   }
 }
 
@@ -286,5 +296,6 @@ footer {
 .social__links:focus .socials__icon {
   fill: #fcfcfc;
 }
+
 
 
