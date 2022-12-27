@@ -2564,8 +2564,8 @@ footer {
   position: relative;
   display: flex;
   align-items: center;
-  margin-bottom: 52px;
   flex-direction: column;
+  margin-bottom: 52px;
 }
 @media screen and (min-width: 768px) {
   .modal__items {
@@ -2849,9 +2849,13 @@ footer {
   height: 136px;
 }
 
+.modal__items:focus .outline_div {
+  background-color: rgb(150, 175, 140);
+}
+
 .shadow-div {
   position: absolute;
-  top: 50%;
+  top: 7px;
   z-index: -8;
   width: 132px;
   height: 132px;
