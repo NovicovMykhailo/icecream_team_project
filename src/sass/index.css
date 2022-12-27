@@ -2850,7 +2850,7 @@ footer {
   height: 136px;
 }
 
-.modal__items:focus > .outline-div {
+.outline-div:focus {
   background-color: rgb(150, 175, 140);
 }
 
