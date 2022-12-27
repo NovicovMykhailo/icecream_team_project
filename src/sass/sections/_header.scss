@@ -43,12 +43,10 @@ header {
   @include flex_grid(4, 28px);
   font-weight: 700;
   font-size: 16px;
-  line-height: calc( 20px/16px)
-
+  line-height: calc(20px / 16px);
 }
 
 .nav__link {
-
   color: $secondary-text-color;
   font-weight: 700;
 
@@ -87,7 +85,6 @@ header {
   padding-bottom: 64px;
   text-align: center;
 
-
   &__top {
     display: flex;
     align-items: center;
@@ -115,28 +112,26 @@ header {
       margin-right: 32px;
       margin-top: 32px;
     }
-  }
-  __btn {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    margin-right: 20px;
-    margin-top: 16px;
-    @media screen and (min-width: $tablet) {
-      margin-right: 32px;
-      margin-top: 32px;
+    transition: color $anim-std 50ms;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
     }
   }
+
   &__list {
     display: flex;
     flex-direction: column;
     gap: 32px;
 
-      @media screen and (min-width: $tablet) {
+ 
+
+    @media screen and (min-width: $tablet) {
       gap: 40px;
     }
   }
- 
+
   &__link {
     font-weight: 700;
     font-size: 32px;
@@ -145,16 +140,16 @@ header {
     color: $secondary-text-color;
     transition: color $anim-std 250ms;
 
-    @media screen and(min-width: $tablet){
+    @media screen and(min-width: $tablet) {
       font-size: 48px;
       line-height: calc(59px / 48px);
     }
-    &:hover, &:focus{
+    &:hover,
+    &:focus {
       color: $primary-text-color;
     }
   }
 
-  
   &__icon {
     fill: currentColor;
   }
@@ -166,10 +161,48 @@ header {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  @media screen and (min-width:$tablet){
-    padding-top: 76px;
-  }
 }
+
+@media screen and (orientation: landscape) {
+  // ================
+  // orientation landscape for mobile
+  @media screen and (min-width: $mobile) {
+    .mobile-menu_wrapper {
+      padding-top: 0px;
+      padding-bottom: 16px;
+    }
+    .header-container {
+      max-width: 100%;
+    }
+    .mobile-menu__list{
+       gap: 10px;
+      padding-bottom: 10px;
+    }
+  }
+  
+
+
+    // ===========
+    // orientation landscape for tablet
+    @media screen and (min-width: $tablet) {
+      .mobile-menu_wrapper{
+        padding-top: 76px;
+      }
+      .mobile-menu__list{
+        gap: 50px;
+       padding-bottom: 10px;
+     }
+    
+    }
+
+
+    // =============
+    // orientation landscape for desktop
+
+  
+
+  }
+
 
 .menu-toggle {
   @include flex_centering(inline-flex);
@@ -187,8 +220,14 @@ header {
 
   color: #fff;
 
+  transition: color $anim-std;
+
   @media screen and (min-width: $desktop) {
     display: none;
+  }
+  &:hover,
+  &:focus {
+    color: $accent-color;
   }
 }
 
@@ -215,14 +254,13 @@ header {
 }
 
 .mobile-menu__btn--buy-now {
-  
   display: flex;
   align-items: center;
   gap: 4px;
   width: 152px;
   padding: 9px 0px;
-  
-    @media screen and (min-width: $tablet) {
+
+  @media screen and (min-width: $tablet) {
     display: none;
   }
 }
