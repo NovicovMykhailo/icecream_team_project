@@ -142,7 +142,6 @@
     margin-bottom: 60px;
   }
 
-  outline: 1px solid greenyellow;
 }
 
 .modal__items--green .checkbox-green {
@@ -461,7 +460,7 @@
   height: 136px;
 }
 
-.outline-div:focus {
+.modal__items:focus>.outline-div {
   background-color: rgba(150, 175, 140, 1);
 }
 

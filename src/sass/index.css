@@ -2566,7 +2566,6 @@ footer {
   align-items: center;
   flex-direction: column;
   margin-bottom: 52px;
-  outline: 1px solid greenyellow;
 }
 @media screen and (min-width: 768px) {
   .modal__items {
@@ -2850,7 +2849,7 @@ footer {
   height: 136px;
 }
 
-.outline-div:focus {
+.modal__items:focus > .outline-div {
   background-color: rgb(150, 175, 140);
 }
 
