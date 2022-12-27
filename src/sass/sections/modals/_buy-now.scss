@@ -143,132 +143,7 @@
   }
 }
 
-.modal__items--green {
-  &::after {
-    z-index: -11;
-    border: 2px solid rgba(150, 175, 140, 1);
-    border-radius: 10px;
 
-    @media screen and (min-width: 768px) {
-      top: 35%;
-      left: 0;
-    }
-  }
-
-  &::before {
-    content: '';
-    position: absolute;
-    z-index: -10;
-
-    @media screen and (min-width: 768px) {
-      top: 7px;
-      left: 0;
-    }
-    top: 7px;
-    left: 46px;
-
-    width: 132px;
-    height: 132px;
-
-    background-color: rgba(156, 190, 143, 0.7);
-    border-radius: 50%;
-    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
-  }
-}
-
-.modal__items--yellow .checkbox-yellow {
-  &::after {
-    content: '';
-    position: absolute;
-    display: inline-block;
-    z-index: -11;
-    border: 2px solid rgba(239, 212, 120, 1);
-    border-radius: 10px;
-
-    width: 132px;
-    height: 136px;
-
-    @media screen and (min-width: 768px) {
-      top: 35%;
-      left: 0;
-    }
-
-    top: 35%;
-    left: 46px;
-  }
-
-  &::before {
-    content: '';
-    position: absolute;
-    z-index: -10;
-
-    @media screen and (min-width: 768px) {
-      top: 7px;
-      left: 0;
-    }
-
-    top: 7px;
-    left: 46px;
-
-    width: 132px;
-    height: 132;
-
-    background-color: rgba(248, 210, 78, 0.7);
-    border-radius: 50%;
-    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
-  }
-}
-.modal__items--red .checkbox-red {
-  &::after {
-    content: '';
-    position: absolute;
-    z-index: -11;
-    border: 2px solid rgba(214, 147, 109, 1);
-    border-radius: 10px;
-
-    width: 132px;
-    height: 136px;
-
-    @media screen and (min-width: 768px) {
-      top: 35%;
-      left: 0;
-    }
-
-    top: 35%;
-    left: 46px;
-  }
-
-  &::before {
-    content: '';
-    position: absolute;
-    z-index: -10;
-
-    @media screen and (min-width: 768px) {
-      top: 7px;
-      left: 0;
-    }
-
-    top: 7px;
-    left: 46px;
-
-    width: 132px;
-    height: 132;
-
-    background-color: rgba(213, 117, 63, 0.7);
-    border-radius: 50%;
-    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
-  }
-}
-
-.checkbox_g:checked ~ .checkbox-green::after {
-  background-color: rgba(150, 175, 140, 1);
-}
-.checkbox_y:checked ~ .checkbox-yellow::after {
-  background-color: rgba(239, 212, 120, 1);
-}
-.checkbox_r:checked ~ .checkbox-red::after {
-  background-color: rgba(214, 147, 109, 1);
-}
 
 .buy-now__img {
   margin-bottom: 20px;
@@ -284,15 +159,8 @@
   line-height: calc(20 / 16);
   letter-spacing: 0.04em;
 }
-// .form {
-//   display: block;
-//   width: 100%;
-//   @media screen and (min-width: 768px) {
-//     margin: 0 auto;
-//     width: 368px;
-//     margin-bottom: 32px;
-//   }
-// }
+
+
 .form-field__wrapper {
   display: flex;
   flex-direction: column;
@@ -311,13 +179,7 @@
   }
 }
 
-//   &:not(:last-child) {
-//     margin-bottom: 12px;
-//   }
-//   &:last-child{
-//     margin-bottom: 32px;
-//   }
-// }
+
 
 .form-label {
   position: absolute;
@@ -440,7 +302,7 @@
   position: absolute;
   top: 35%;
 
-  z-index: -7;
+  z-index: -3;
   border-radius: 10px;
 
   width: 132px;
@@ -490,7 +352,7 @@
   position: absolute;
   top: 7px;
 
-  z-index: -8;
+  z-index: -1;
 
   width: 132px;
   height: 132px;
