@@ -2718,18 +2718,22 @@ footer {
   height: 136px;
 }
 
-.modal__items.and-green:hover .outline-div.and-green,
-.modal__items.and-green:focus .outline-div.and-green {
+.modal__link {
+  min-height: 199px;
+}
+
+.modal__link.and-green:hover .outline-div.and-green,
+.modal__link.and-green:focus .outline-div.and-green {
   background-color: rgb(150, 175, 140);
 }
 
-.modal__items.and-yellow:hover .outline-div.and-yellow,
-.modal__items.and-yellow:focus .outline-div.and-yellow {
+.modal__link.and-yellow:hover .outline-div.and-yellow,
+.modal__link.and-yellow:focus .outline-div.and-yellow {
   background-color: rgb(239, 212, 120);
 }
 
-.modal__items.and-red:hover .outline-div.and-red,
-.modal__items.and-red:focus .outline-div.and-red {
+.modal__link.and-red:hover .outline-div.and-red,
+.modal__link.and-red:focus .outline-div.and-red {
   background-color: rgb(214, 147, 109);
 }
 

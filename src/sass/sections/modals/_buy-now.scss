@@ -304,8 +304,12 @@
   height: 136px;
 }
 
-.modal__items.and-green:hover,
-.modal__items.and-green:focus {
+.modal__link {
+  min-height: 199px;
+}
+
+.modal__link.and-green:hover,
+.modal__link.and-green:focus {
   .outline-div.and-green {
     background-color: rgba(150, 175, 140, 1);
   }
@@ -316,8 +320,8 @@
 //   background-color: rgba(150, 175, 140, 1);
 // }
 
-.modal__items.and-yellow:hover,
-.modal__items.and-yellow:focus {
+.modal__link.and-yellow:hover,
+.modal__link.and-yellow:focus {
   .outline-div.and-yellow {
     background-color: rgba(239, 212, 120, 1);
   }
@@ -328,8 +332,8 @@
 //   background-color: rgba(239, 212, 120, 1);
 // }
 
-.modal__items.and-red:hover,
-.modal__items.and-red:focus {
+.modal__link.and-red:hover,
+.modal__link.and-red:focus {
   .outline-div.and-red {
     background-color: rgba(214, 147, 109, 1);
   }
