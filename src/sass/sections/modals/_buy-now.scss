@@ -305,31 +305,40 @@
 }
 
 .modal__items.and-green:hover,
-.modal__items.and-green:focus,
-.outline-div.and-green:hover,
-.outline-div.and-green:focus {
+.modal__items.and-green:focus {
   .outline-div.and-green {
     background-color: rgba(150, 175, 140, 1);
   }
 }
 
+// .outline-div.and-green:hover,
+// .outline-div.and-green:focus {
+//   background-color: rgba(150, 175, 140, 1);
+// }
+
 .modal__items.and-yellow:hover,
-.modal__items.and-yellow:focus,
-.outline-div.and-yellow:hover,
-.outline-div.and-yellow:focus {
+.modal__items.and-yellow:focus {
   .outline-div.and-yellow {
     background-color: rgba(239, 212, 120, 1);
   }
 }
 
+// .outline-div.and-yellow:hover,
+// .outline-div.and-yellow:focus {
+//   background-color: rgba(239, 212, 120, 1);
+// }
+
 .modal__items.and-red:hover,
-.modal__items.and-red:focus,
-.outline-div.and-red:hover,
-.outline-div.and-red:focus {
+.modal__items.and-red:focus {
   .outline-div.and-red {
     background-color: rgba(214, 147, 109, 1);
   }
 }
+
+// .outline-div.and-red:hover,
+// .outline-div.and-red:focus {
+//   background-color: rgba(214, 147, 109, 1);
+// }
 
 .modal__items.and-green {
   .outline-div {
