@@ -459,10 +459,8 @@
   height: 136px;
 }
 
-.modal__items:focus {
-  .outline_div {
-    background-color: rgba(150, 175, 140, 1);
-  }
+.modal__items:focus .outline_div {
+  background-color: rgba(150, 175, 140, 1);
 }
 
 .shadow-div {
