@@ -50,16 +50,24 @@
   }
 }
 .hollow-button__hero {
-  @media screen and (max-width: $tablet) {
-    font-family: Montserrat;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: calc(15 / 12);
-    text-align: center;
-    padding: 10px 22px;
+      font-family: Montserrat;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: calc(15 / 12);
+      text-align: center;
+
+      min-height: 38px;
+      padding: 9px 21px;
+
+
+  @media screen and (min-width: $tablet) {
+    padding: 9px 21px;
+   
   }
   @media screen and (min-width: $desktop) {
     min-width: 134px;
+    min-height: 42px;
+
     padding: 11px 30px;
   }
 }
@@ -69,14 +77,16 @@
   align-items: center;
   gap: 16px;
   @media screen and (min-width: $desktop) {
-    gap: 32px;
+    gap: 34px;
   }
 }
 .hero__tablet--group {
+    gap: 12px;
+
   @media screen and (min-width: $tablet) {
     position: absolute;
     display: flex;
-    gap: 12px;
+    
     bottom: 12px;
     align-items: flex-end;
     z-index: 3;

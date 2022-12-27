@@ -110,11 +110,13 @@
   border-radius: 10px;
   outline: 1px solid transparent;
   outline-offset: -1px;
+  height: 32px;
 
   // transition: outline $anim-std;
 
   @media screen and (min-width: $tablet) {
     padding: 11px 16px;
+    height: 42px;
 
 
     font-size: 14px;
@@ -168,11 +170,13 @@
 .franchise__btn {
   display: block;
   margin: 0 auto;
-  padding: 12px 34px;
+  padding: 10.5px 0;
   min-width: 114px;
   margin-top: 16px;
+  
 
   @media screen and (min-width: $tablet) {
     min-width: 121px;
+    padding: 10px 30px;
   }
 }

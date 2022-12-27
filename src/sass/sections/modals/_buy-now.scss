@@ -351,7 +351,9 @@ list-style: none;
 
 .form-input {
   width: 100%;
-  // height: 40px;
+  padding: 6px 12px;
+  min-height: 32px;
+  
 
   border: 1px solid #84A178;
   background-color: rgba(248, 210, 78, 0.1);
@@ -365,6 +367,14 @@ list-style: none;
   font-size: 12px;
   font-weight: 400;
   line-height: calc(17 / 12);
+
+  @media screen and (min-width:$tablet){
+    padding: 11px 16px;
+    min-height: 42px;
+    font-size: 14px;
+    line-height: 20px;
+
+  }
 
   // transition: border-color $anim-std;
 
@@ -387,7 +397,7 @@ list-style: none;
   min-height: 65px;
   resize: none;
 
-  padding: 6px 12px;
+  padding: 8px 12px;
 
   outline: none;
   background-color: rgba(248, 210, 78, 0.1);
@@ -397,6 +407,13 @@ list-style: none;
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
+
+  @media screen and (min-width:$tablet){
+    padding: 11px 16px;
+    font-size: 14px;
+    line-height: 20px;
+
+  }
 
   // transition: border-color $anim-std;
 
@@ -423,6 +440,13 @@ list-style: none;
   top: 16px;
 }
 .submit__btn{
+  padding: 9px 13px;
   margin-left: auto;
   margin-right: auto;
+  min-width: 114px;
+
+  @media screen and (min-width:$tablet){
+   min-width: 121px;
+
+  }
 }

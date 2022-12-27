@@ -214,11 +214,17 @@
 .ingredients-form__comments {
   resize: none;
   height: 84px;
-}
+} 
 
 .ingredients__button {
   margin: 24px auto 0 auto;
+  padding: 10px 0;
+  min-width: 132px;
+  
+
   @media screen and (min-width: $tablet) {
     margin: 32px auto 0 auto;
+    min-width: 121px;
+
   }
 }
