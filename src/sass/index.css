@@ -2839,7 +2839,7 @@ footer {
   }
 }
 
-.outline_div {
+.outline-div {
   position: absolute;
   top: 35%;
   z-index: -7;
@@ -2849,7 +2849,7 @@ footer {
   height: 136px;
 }
 
-.modal__items:focus .outline_div {
+.modal__items:focus > .outline-div {
   background-color: rgb(150, 175, 140);
 }
 

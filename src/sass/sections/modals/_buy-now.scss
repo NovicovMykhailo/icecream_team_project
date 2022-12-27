@@ -447,7 +447,7 @@
 
 // serhii scss
 
-.outline_div {
+.outline-div {
   position: absolute;
   top: 35%;
 
@@ -459,7 +459,7 @@
   height: 136px;
 }
 
-.modal__items:focus .outline_div {
+.modal__items:focus>.outline-div {
   background-color: rgba(150, 175, 140, 1);
 }
 
