@@ -444,8 +444,11 @@
 
 // serhii scss
 
-// .modal__items-div {
-//   min-width: 132px;
-//   min-height: 136px;
-//   outline: 1px solid greenyellow;
-// }
+.outline_div {
+  z-index: -7;
+  border: 2px solid rgba(150, 175, 140, 1);
+  border-radius: 10px;
+
+  width: 132px;
+  height: 136px;
+}

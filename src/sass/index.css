@@ -2839,6 +2839,14 @@ footer {
   }
 }
 
+.outline_div {
+  z-index: -7;
+  border: 2px solid rgb(150, 175, 140);
+  border-radius: 10px;
+  width: 132px;
+  height: 136px;
+}
+
 .ingredients {
   width: 280px;
   box-sizing: content-box;
