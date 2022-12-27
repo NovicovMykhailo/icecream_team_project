@@ -2566,6 +2566,7 @@ footer {
   align-items: center;
   flex-direction: column;
   margin-bottom: 52px;
+  outline: 1px solid greenyellow;
 }
 @media screen and (min-width: 768px) {
   .modal__items {
