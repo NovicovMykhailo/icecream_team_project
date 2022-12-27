@@ -2834,17 +2834,9 @@ footer {
   height: 136px;
 }
 
-.modal__items:focus:green,
-.modal__items:hover .outline-div:green {
+.modal__items.green:hover .outline-div,
+.modal__items.green:focus .outline-div {
   background-color: rgb(150, 175, 140);
-}
-.modal__items:focus:yellow,
-.modal__items:hover .outline-div:yellow {
-  background-color: rgb(239, 212, 120);
-}
-.modal__items:focus:red,
-.modal__items:hover .outline-div:red {
-  background-color: rgb(214, 147, 109);
 }
 
 .shadow-div {

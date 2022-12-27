@@ -450,21 +450,21 @@
   height: 136px;
 }
 
-.modal__items:focus,
-.modal__items:hover .outline-div {
- 
-	&:green {
-background-color: rgba(150, 175, 140, 1);
+
+.modal__items.green:hover,
+.modal__items.green:focus {
+	.outline-div {background-color: rgba(150, 175, 140, 1);}
+
 	}
 
-	&:yellow {
-		background-color: rgba(239, 212, 120, 1);
-	}
+	// &:yellow {
+	// 	background-color: rgba(239, 212, 120, 1);
+	// }
 
-	&:red {
-		background-color: rgba(214, 147, 109, 1);
-	}
-}
+	// &:red {
+	// 	background-color: rgba(214, 147, 109, 1);
+	// }
+
 
 
 
