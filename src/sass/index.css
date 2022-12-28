@@ -2552,6 +2552,7 @@ footer {
   gap: 20px;
   flex-direction: column;
   margin-bottom: 31px;
+  outline: 1px solid greenyellow;
 }
 @media screen and (min-width: 768px) {
   .modal__list {
