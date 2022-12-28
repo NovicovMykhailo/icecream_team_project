@@ -1,4 +1,3 @@
-
 .modal {
   top: 20px;
   position: relative;
@@ -6,8 +5,6 @@
   width: 280px;
 
   text-align: center;
-
- 
 
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -24,7 +21,6 @@
   }
   @media screen and (min-width: 768px) {
     width: 568px;
-   
   }
 }
 
@@ -87,14 +83,20 @@
 
 .modal__list {
   list-style: none;
+
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   flex-direction: column;
+
+  margin-bottom: 31px;
+
   @media screen and (min-width: 768px) {
     flex-direction: unset;
     gap: 32px;
     flex-basis: calc((100% - 2 * 32px) / 3);
+
+    margin-bottom: 40px;
   }
 }
 .modal__items {
@@ -105,7 +107,7 @@
   flex-direction: column;
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 40px;
+    margin-bottom: 0;
   }
 }
 
@@ -187,12 +189,10 @@
     line-height: 20px;
   }
 
-
   &:focus + .form-label,
   &:not(:placeholder-shown) + .form-label {
     transform: translateY(-235%) translateX(-12px) scale(0.9);
   }
- 
 }
 
 .form-comment {
@@ -217,7 +217,6 @@
     line-height: 20px;
   }
 
-
   &:focus + .form-label,
   &:not(:placeholder-shown) + .form-label {
     transform: translateY(-205%) translateX(-12px) scale(0.9);
@@ -225,7 +224,6 @@
 
   @media screen and (min-width: 768px) {
     min-height: 84px;
-  
   }
 }
 
@@ -267,8 +265,6 @@
   }
 }
 
-
-
 .modal__link.and-yellow:hover,
 .modal__link.and-yellow:focus {
   .outline-div.and-yellow {
@@ -276,16 +272,12 @@
   }
 }
 
-
-
 .modal__link.and-red:hover,
 .modal__link.and-red:focus {
   .outline-div.and-red {
     background-color: rgba(214, 147, 109, 1);
   }
 }
-
-
 
 .modal__items.and-green {
   .outline-div {
