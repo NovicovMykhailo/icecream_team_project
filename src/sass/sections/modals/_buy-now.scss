@@ -141,6 +141,7 @@
 .form-field {
   position: relative;
   display: block;
+
   label {
     display: none;
   }
@@ -166,7 +167,7 @@
 
 .form-input {
   width: 100%;
-  padding: 6px 12px;
+  padding: 8px 12px;
   height: 32px;
 
   border: 1px solid #84a178;
