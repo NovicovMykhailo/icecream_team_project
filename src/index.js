@@ -15,3 +15,5 @@ import './js/modal-franchise.js';
 import './js/modal-location.js';
 //  modal buy
 import './js/buy.js';
+//  scroll up button
+import './js/scroll-top-btn.js';
