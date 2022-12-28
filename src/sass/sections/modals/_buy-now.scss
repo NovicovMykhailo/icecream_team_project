@@ -242,7 +242,7 @@
 
 .outline-div {
   position: absolute;
-  top: 32%;
+  top: 83px;
 
   z-index: -3;
   border-radius: 10px;
@@ -266,7 +266,6 @@
 .checkbox_r:checked ~ .outline-div.and-red {
   background-color: rgba(214, 147, 109, 1);
 }
-
 
 .modal__items--green {
   .outline-div {
