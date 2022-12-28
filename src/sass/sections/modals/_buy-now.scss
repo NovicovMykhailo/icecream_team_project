@@ -167,7 +167,7 @@
 .form-input {
   width: 100%;
   padding: 6px 12px;
-  min-height: 32px;
+  height: 32px;
 
   border: 1px solid #84a178;
   background-color: rgba(248, 210, 78, 0.1);
@@ -184,7 +184,7 @@
 
   @media screen and (min-width: $tablet) {
     padding: 11px 16px;
-    min-height: 42px;
+    height: 42px;
     font-size: 14px;
     line-height: 20px;
   }
@@ -197,7 +197,8 @@
 
 .form-comment {
   width: 100%;
-  min-height: 65px;
+  // min-height: 65px;
+  height: 100%;
   resize: none;
 
   padding: 8px 12px;
@@ -223,8 +224,18 @@
   }
 
   @media screen and (min-width: 768px) {
-    min-height: 84px;
+    // min-height: 84px;
+    height: 100%;
+
   }
+}
+
+.comment{
+  height: 65px;
+  @media screen and (min-width: $tablet){
+    height: 84px;
+  }
+
 }
 
 .form-label.comment {
@@ -248,7 +259,7 @@
 
 .outline-div {
   position: absolute;
-  top: 58px;
+  top: 64px;
 
   z-index: -3;
   border-radius: 10px;
@@ -271,6 +282,10 @@
 }
 .checkbox_r:checked ~ .outline-div.and-red {
   background-color: rgba(214, 147, 109, 1);
+}
+
+.checkbox-yellow, .checkbox-green, .checkbox-red{
+  min-height: 200px;
 }
 
 .modal__items--green {
