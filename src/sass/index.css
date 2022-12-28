@@ -2568,11 +2568,6 @@ footer {
   align-items: center;
   flex-direction: column;
 }
-@media screen and (min-width: 768px) {
-  .modal__items {
-    margin-bottom: 0;
-  }
-}
 
 .buy-now__img {
   margin-bottom: 27px;
