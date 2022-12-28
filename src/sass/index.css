@@ -2551,8 +2551,7 @@ footer {
   flex-wrap: wrap;
   gap: 20px;
   flex-direction: column;
-  margin-bottom: 31px;
-  outline: 1px solid greenyellow;
+  margin-bottom: 45px;
 }
 @media screen and (min-width: 768px) {
   .modal__list {
