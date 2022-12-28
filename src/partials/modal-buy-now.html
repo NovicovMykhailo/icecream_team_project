@@ -10,58 +10,137 @@
       <div class="form-group">
         <h2 class="str">Buy now</h2>
 
-        <form class="form" >
-        <ul class="modal__list">
-          <li class="modal__items modal__items--green">
+        <form class="form">
+          <ul class="modal__list">
+            <li class="modal__items modal__items--green">
+              <input
+                id="checkbox_g"
+                class="checkbox_g"
+                type="checkbox"
+                name="checkbox"
+              />
+              <label for="checkbox_g" class="buy-now__text checkbox-green">
+                <img
+                  class="buy-now__img"
+                  loading="lazy"
+                  src="./images/buy-now/img_cream@1x.png"
+                  srcset="
+                    ./images/buy-now/img_cream@1x.png 1x,
+                    ./images/buy-now/img_cream@1x.png 2x
+                  "
+                  width="132"
+                  height="132"
+                  alt="Ice cream"
+                />
+                <p class="buy-now__text">ice cream</p>
+              </label>
+              <div class="shadow-div shadow-div__green"></div>
 
-            <input id="checkbox_g" class="checkbox_g" type="checkbox" name="checkbox">
-            <label for="checkbox_g" class="buy-now__text checkbox-green">
-              <img class="buy-now__img" loading="lazy" src="./images/buy-now/img_cream@1x.png" srcset="
-                          ./images/buy-now/img_cream@1x.png 1x,
-                          ./images/buy-now/img_cream@1x.png 2x" width="132" height="132" alt="Ice cream">
-              ice cream
-            </label>
-          </li>
-          <li class="modal__items modal__items--yellow">
-            <input id="checkbox_y" class="checkbox_y" type="checkbox" name="checkbox">
-            <label for="checkbox_y" class="buy-now__text checkbox-yellow">
-              <img class="buy-now__img" src="./images/buy-now/img_coffee@1x.png" srcset="
-            ./images/buy-now/img_coffee@1x.png 1x,
-            ./images/buy-now/img_coffee@1x.png 2x" width="132" height="132" alt="ice coffee">
-              ice coffee
-            </label>
-          </li>
-          <li class="modal__items modal__items--red">
-            <input id="checkbox_r" class="checkbox_r" type="checkbox" name="checkbox">
-            <label for="checkbox_r" class="buy-now__text checkbox-red">
-              <img class="buy-now__img" src="./images/buy-now/img_shake@1x.png" srcset="
-            ./images/buy-now/img_shake@1x.png 1x,
-            ./images/buy-now/img_shake@1x.png 2x" width="132" height="132" alt="milkshake">
-              milkshake
-            </label>
-          </li>
-        </ul>
+              <div class="outline-div and-green"></div>
+            </li>
 
-      <div class="form-field__wrapper">
-          <div class="form-field">
-            <input type="text" class="form-input formfield" name="customer-name" id="custom-name" placeholder="Name" required autocomplete="off"  pattern="[A-Za-z]{3,15}">
-            <label for="custom-name" class="form-label">Name</label>
+            <li class="modal__items modal__items--yellow">
+              
+                <input
+                  id="checkbox_y"
+                  class="checkbox_y"
+                  type="checkbox"
+                  name="checkbox"
+                />
+                <label for="checkbox_y" class="buy-now__text checkbox-yellow">
+                  <img
+                    class="buy-now__img"
+                    src="./images/buy-now/img_coffee@1x.png"
+                    srcset="
+                      ./images/buy-now/img_coffee@1x.png 1x,
+                      ./images/buy-now/img_coffee@1x.png 2x
+                    "
+                    width="132"
+                    height="132"
+                    alt="ice coffee"
+                  />
+                  <p class="buy-now__text">ice coffee</p>
+                </label>
+                <div class="shadow-div shadow-div__yellow"></div>
+
+                <div class="outline-div and-yellow"></div>
+              
+            </li>
+
+            <li class="modal__items modal__items--red">
+              
+                <input
+                  id="checkbox_r"
+                  class="checkbox_r"
+                  type="checkbox"
+                  name="checkbox"
+                />
+                <label for="checkbox_r" class="buy-now__text checkbox-red">
+                  <img
+                    class="buy-now__img"
+                    src="./images/buy-now/img_shake@1x.png"
+                    srcset="
+                      ./images/buy-now/img_shake@1x.png 1x,
+                      ./images/buy-now/img_shake@1x.png 2x
+                    "
+                    width="132"
+                    height="132"
+                    alt="milkshake"
+                  />
+                  <p class="buy-now__text">milkshake</p>
+                </label>
+                <div class="shadow-div shadow-div__red"></div>
+
+                <div class="outline-div and-red"></div>
+              
+            </li>
+          </ul>
+
+          <div class="form-field__wrapper">
+            <div class="form-field">
+              <input
+                type="text"
+                class="form-input formfield"
+                name="customer-name"
+                id="custom-name"
+                placeholder="Name"
+                required
+                autocomplete="off"
+                pattern="[A-Za-z]{3,15}"
+              />
+              <label for="custom-name" class="form-label">Name</label>
+            </div>
+
+            <div class="form-field">
+              <input
+                type="tel"
+                class="form-input formfield"
+                name="customer-phone"
+                id="custom-tel"
+                placeholder="Phone"
+                required
+                autocomplete="off"
+                pattern="[0-9]{3,16}"
+              />
+              <label for="custom-tel" class="form-label">Phone</label>
+            </div>
+
+            <div class="form-field comment">
+              <textarea
+                class="form-comment formfield"
+                name="customer-comment"
+                id="custom-comment"
+                autocomplete="off"
+                placeholder="Comment"
+              ></textarea>
+              <label class="form-label comment" for="custom-comment"
+                >Comment</label
+              >
+            </div>
+            <button class="button submit__btn" type="submit">Submit</button>
           </div>
-
-          <div class="form-field">
-            <input type="tel" class="form-input formfield" name="customer-phone" id="custom-tel" placeholder="Phone" required autocomplete="off" pattern="[0-9]{3,16}">
-            <label for="custom-tel" class="form-label">Phone</label>
-          </div>
-
-          <div class="form-field comment">
-            <textarea class="form-comment formfield" name="customer-comment" id="custom-comment"  autocomplete="off" placeholder="Comment" ></textarea>
-            <label class="form-label comment" for="custom-comment">Comment</label>
-          </div>
-          <button class="button submit__btn" type="submit">Submit</button>
         </form>
-      </div>
       </div>
     </div>
   </div>
 </div>
-
