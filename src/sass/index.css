@@ -2739,6 +2739,11 @@ footer {
   background-color: rgb(214, 147, 109);
 }
 
+.checkbox_g:hover ~ .outline-div.and-green,
+.checkbox_g:focus ~ .outline-div.and-green {
+  background-color: rgb(150, 175, 140);
+}
+
 .modal__items--green .outline-div {
   border: 2px solid rgb(150, 175, 140);
 }
