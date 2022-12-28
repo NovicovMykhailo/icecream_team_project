@@ -273,21 +273,18 @@
   background-color: rgba(214, 147, 109, 1);
 }
 
-.checkbox_g:hover,
 .checkbox_g:focus {
   ~ .outline-div.and-green {
     background-color: rgba(150, 175, 140, 1);
   }
 }
 
-.checkbox_y:hover,
 .checkbox_y:focus {
   ~ .outline-div.and-yellow {
     background-color: rgba(239, 212, 120, 1);
   }
 }
 
-.checkbox_r:hover,
 .checkbox_r:focus {
   ~ .outline-div.and-red {
     background-color: rgba(214, 147, 109, 1);
@@ -296,7 +293,7 @@
 
 .modal__items--green {
   .outline-div {
-    border: 2px solid rgba(214, 147, 109, 1);
+    border: 2px solid rgba(150, 175, 140, 1);
   }
 }
 
