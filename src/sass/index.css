@@ -2739,19 +2739,19 @@ footer {
   background-color: rgb(214, 147, 109);
 }
 
-.checkbox_g:hover ~ .outline-div.and-green,
-.checkbox_g:focus ~ .outline-div.and-green {
+.checkbox_g:hover ~ .outline-div,
+.checkbox_g:focus ~ .outline-div {
   background-color: rgb(150, 175, 140);
 }
 
-.checkbox_y:hover ~ .outline-div.and-yellow,
-.checkbox_y:focus ~ .outline-div.and-yellow {
+.checkbox_y:hover ~ .outline-div,
+.checkbox_y:focus ~ .outline-div {
   background-color: rgb(239, 212, 120);
 }
 
-.checkbox_r:hover ~ .outline-div.and-yellow,
-.checkbox_r:focus ~ .outline-div.and-yellow {
-  background-color: rgb(239, 212, 120);
+.checkbox_r:hover ~ .outline-div,
+.checkbox_r:focus ~ .outline-div {
+  background-color: rgb(214, 147, 109);
 }
 
 .modal__items--green .outline-div {
