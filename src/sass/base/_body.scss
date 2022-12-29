@@ -99,11 +99,8 @@ img {
   background-color:rgba(122, 122, 122,0.5);
   outline: 2px solid $ice-coffee-card-color;
   box-shadow: 0px 0px 48px -9px rgba(0,0,0,0.51);
-  transition: background-color $anim-std 50ms, outline $anim-std 50ms;
-  &:hover{
-    background-color: rgba(122, 122, 122,0.5);
-    outline: 2px solid $accent-color;
-  }
+  transition: background-color $anim-std 50ms, outline $anim-std 50ms, scale $anim-std;
+ 
 
 
   @media screen and (min-width: $tablet){ 
@@ -119,7 +116,12 @@ img {
       bottom: 25px; 
 
     }
-
+    &:hover{
+      // background-color: rgba(122, 122, 122,0.5);
+      background-color: $primary-page-color;
+      outline: 2px solid $accent-color;
+      scale: (1.1);
+    }
 
 
 }
@@ -132,6 +134,7 @@ img {
  
   &:hover{
     fill: $accent-color;
+   
     
   }
 
