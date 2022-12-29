@@ -46,3 +46,21 @@
       'https://www.youtube.com/embed/oa_7fArLuLc?modestbranding=1&autohide=1&showinfo=0&controls=1';
   }
 })();
+
+document.querySelector(".read-modal-open1").addEventListener('click', function() {
+  document.querySelector(".read-modal").style.display = 'flex';
+  document.querySelector("body").style.overflowY = 'hidden';
+  });
+  
+  document.querySelector(".read-modal-open2").addEventListener('click', function() {
+    document.querySelector(".read-modal").style.display = 'flex';
+    document.querySelector("body").style.overflowY = 'hidden';
+    });
+    
+
+  
+  /* when modal is closed */
+  document.querySelector(".read-modal-close").addEventListener('click', function() {
+  document.querySelector(".read-modal").style.display = 'is-hidden';
+  document.querySelector("body").style.overflowY = 'visible';
+  });

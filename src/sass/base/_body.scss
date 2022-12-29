@@ -2,8 +2,15 @@
 
 html {
   scroll-behavior: smooth;
-    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent; 
 }
+
+::-webkit-scrollbar {
+  width: 0px;
+  height:0px;
+
+}
+
 body {
   background-color: $secondary-page-color;
   color: $primary-text-color;
@@ -13,6 +20,8 @@ body {
   letter-spacing: 0.04em;
   line-height: calc(25px / 14px);
   margin: 0 auto;
+
+  
 
   background-image: url('../images/body/bg-body-sm.jpg');
   background-size: 885px 1242px;

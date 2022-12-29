@@ -17,3 +17,22 @@
     refs.modal.classList.toggle("is-hidden");
   }
 })();
+
+
+document.querySelector("[data-modal-open]").addEventListener('click', function() {
+  document.querySelector("[data-modal]").style.display = 'flex';
+  document.querySelector("body").style.overflowY = 'hidden';
+});
+
+document.querySelector(".data-modal-open2").addEventListener('click', function() {
+  document.querySelector("[data-modal]").style.display = 'flex';
+  document.querySelector("body").style.overflowY = 'hidden';
+});
+
+
+/* when modal is closed */
+document.querySelector("[data-modal-close]").addEventListener('click', function() {
+  document.querySelector("[data-modal]").style.display = 'is-hidden';
+  document.querySelector("body").style.overflowY = 'visible';
+});
+
