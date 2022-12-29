@@ -67,10 +67,14 @@ img {
 .button-scroll{
   border: none;
 
+  display: none;
+  cursor: pointer;
+
+  
+
   width: 30px;
   height: 30px;
 
-  display: block;
   border-radius: 50%;
   position: fixed;
   right: 20px;
@@ -79,9 +83,9 @@ img {
   z-index: 10;
   padding: 3px;
 
-  display: flex;
+  // display: flex;
  
-  justify-content: center;
+  // justify-content: center;
 
   background-color:rgba(122, 122, 122,0.5);
   outline: 2px solid $ice-coffee-card-color;
@@ -116,6 +120,7 @@ img {
   height: 100%;
   fill: $ice-coffee-card-color;
   transition: fill $anim-std;
+ 
   &:hover{
     fill: $accent-color;
     
