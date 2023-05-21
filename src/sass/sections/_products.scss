@@ -273,11 +273,12 @@ align-items: center;
 .products-btn{
     fill: currentColor;
     box-shadow: $shadow transparent;
-    transition: fill $anim-std, box-shadow $anim-std ;
+    transition: transform 100ms ease, box-shadow 100ms ease ;
    
 
     &:hover, &:focus{
-        fill: #947575;
+        // fill: #947575;
+        transform: scaleX(1.2)
 
 
     }

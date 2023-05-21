@@ -5,7 +5,6 @@
   background-position: bottom;
   background-size: contain;
 
-
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -50,19 +49,17 @@
   }
 }
 .hollow-button__hero {
-      font-family: Montserrat;
-      font-size: 12px;
-      font-weight: 600;
-      line-height: calc(15 / 12);
-      text-align: center;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: calc(15 / 12);
+  text-align: center;
 
-      min-height: 38px;
-      padding: 9px 21px;
-
+  min-height: 38px;
+  padding: 9px 21px;
 
   @media screen and (min-width: $tablet) {
     padding: 9px 21px;
-   
   }
   @media screen and (min-width: $desktop) {
     min-width: 134px;
@@ -81,12 +78,12 @@
   }
 }
 .hero__tablet--group {
-    gap: 12px;
+  gap: 12px;
 
   @media screen and (min-width: $tablet) {
     position: absolute;
     display: flex;
-    
+
     bottom: 12px;
     align-items: flex-end;
     z-index: 3;
@@ -96,6 +93,8 @@
   }
 }
 .hero_ic--left {
+  animation: rotate-disc 10s infinite forwards linear;
+
   @media screen and (max-width: $tablet) {
     display: none;
   }
@@ -111,21 +110,20 @@
   z-index: 2;
   // transform: translateX(-40%);
   // animation: animate__headShake infinite 3000ms;
-  // animation: 
-  
+  // animation:
+
   // wobble-hor-bottom 5s ease 24s infinite;
   // animate__headShake 20s 0s ease;
 
   // animation-delay: 2000ms;
   // animation-duration: 3s;
   // @media screen and (min-width: $mobile) {
-    // left: 50px;
-  
+  // left: 50px;
+
   // }
   @media screen and (min-width: $tablet) {
     left: 408px;
     transform: translateX(0);
-    
   }
 
   @media screen and (min-width: $desktop) {
@@ -142,7 +140,7 @@
   margin-bottom: 32px;
   width: 247px;
   // @media screen and (min-width: $mobile) {
-   
+
   // }
   @media screen and (min-width: $tablet) {
     margin-bottom: 24px;
@@ -231,9 +229,10 @@
 .hero__arrow {
   display: block;
   fill: $secondary-text-color;
-  transition: $anim-std;
+  transition: transform 100ms ease;
   &:hover,
   &:focus {
+    transform: scaleX(1.2);
     fill: #0a8817;
   }
 }
@@ -244,6 +243,7 @@
   padding-left: 0;
   margin-bottom: 12px;
 }
+
 .hero__text--group {
   @media screen and (max-width: $tablet) {
     display: none;
@@ -252,5 +252,76 @@
     display: block;
   }
   @media screen and (min-width: $desktop) {
+  }
+}
+
+@property --num {
+  syntax: '<integer>';
+  initial-value: 0;
+  inherits: false;
+}
+@property --num-2 {
+  syntax: '<integer>';
+  initial-value: 0;
+  inherits: false;
+}
+
+.chain__number.one {
+  font-family: Montserrat;
+  animation: counter 3s infinite forwards ease-in-out,  fallDown 500ms 1 forwards ease;;
+  animation-iteration-count: 1;
+  counter-reset: num var(--num);
+}
+.chain__number.one:after {
+  font-family: Montserrat;
+  content: counter(num);
+}
+.chain__number.two {
+  animation: counter-two 4s infinite forwards ease-in-out, fallDown 500ms 1 forwards ease;
+  animation-iteration-count: 1;
+  counter-reset: num var(--num-2);
+}
+.chain__number.two:after {
+  transform: translateY(0);
+  content: counter(num);
+}
+
+@keyframes counter {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 16;
+  }
+}
+@keyframes counter-two {
+  from {
+    transform: translateY(-400%);
+    opacity: 0;
+    --num-2: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+    --num-2: 23;
+  }
+}
+
+@keyframes rotate-disc {
+  from {
+    rotate: (0deg);
+  }
+  to {
+    rotate: (360deg);
+  }
+}
+@keyframes fallDown {
+  from {
+    transform: translateY(-400%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }

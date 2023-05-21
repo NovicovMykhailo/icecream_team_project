@@ -280,13 +280,9 @@ footer {
   width: 100%;
   height: 100%;
   fill: #84a178;
-  transition: fill $anim-std;
-
 }
 
-.social__links:hover {
-  fill: #fcfcfc;
-}
+
 .social__links {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -297,5 +293,18 @@ footer {
   fill: #fcfcfc;
 }
 
+.footer__list>li:hover .social__links{
+    animation: hover-anim 400ms ;
+  animation-iteration-count: 1;
 
+}
+
+@keyframes hover-anim {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
 

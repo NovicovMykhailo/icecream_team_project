@@ -17,3 +17,5 @@ import './js/modal-location.js';
 import './js/buy.js';
 //  scroll up button
 import './js/scroll-top-btn.js';
+//hero animation
+import './js/hero.js';

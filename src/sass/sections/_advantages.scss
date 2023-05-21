@@ -52,13 +52,20 @@
     padding-top: 90px;
   }
 }
+
+
+///
+/// /  transform:rotateY(360deg);
+
 .advantages__item:first-child:after {
   content: ' ';
 
   position: absolute;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+
+     display: block;
+  left: calc(50% - 25px);;
+  transform:rotateY(0);
 
   background-image: url(./../images/img_advantages/cow.png);
   @media (min-device-pixel-ratio: 2),
@@ -80,8 +87,9 @@
 
   position: absolute;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+   display: block;
+  left: calc(50% - 25px);;
+  transform:rotateY(0);
 
   background-image: url(./../images/img_advantages/weight.png);
   @media (min-device-pixel-ratio: 2),
@@ -100,11 +108,15 @@
 }
 .advantages__item:last-child:after {
   content: ' ';
+  display: block;
+
 
   position: absolute;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  // left: 50%;
+   display: block;
+  left: calc(50% - 25px);;
+  transform: rotateY(0) ;
 
   background-image: url(./../images/img_advantages/ice_crema.png);
   @media (min-device-pixel-ratio: 2),
@@ -120,6 +132,11 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
+}
+
+.advantages__item:hover.advantages__item:after{
+   transition: all 400ms ease;
+    transform:rotateY(360deg) translateX(0);
 }
 .advantages__title {
   margin-bottom: 16px;
